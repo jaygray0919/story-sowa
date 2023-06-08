@@ -6,39 +6,37 @@ use fold level 4 to see pages
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width">
-<link rel="shortcut icon" href="https://ontomatica.io/static/image/logo/onto-symbol-w252-h252.svg" />
+<link rel="shortcut icon"
+	href="https://ontomatica.io/static/image/logo/onto-symbol-w252-h252.svg" />
 
 <title>
 Sowa 23-05-27
 </title>
 
-<link rel="canonical" href="https://afdsi.com/___supplier/paula-perez/story-sowa/" />
+<link rel="canonical"
+	href="https://afdsi.com/story-sowa/" />
 
-<link rel="preload" as="image" type="image/svg+xml"
+<link crossorigin rel="preload" as="image" type="image/svg+xml"
     href="https://s3.amazonaws.com/benetta.net/media/background-svg/background-neural-network-440044-FFE1FFW-w400-h371.svg" />
-<link rel="preload" as="image" type="image/svg+xml"
+
+<link crossorigin rel="preload" as="image" type="image/svg+xml"
     href="https://s3.amazonaws.com/benetta.net/media/background-svg/background-fractal-noise-w1650-h1500.svg" />
 
-<link rel="preload" as="font" type="font/woff2"
-    href="https://s3.amazonaws.com/benetta.net/fonts/noto-sans/noto-sans-v11-latin-regular.woff2" />
-<link rel="preload" as="font" type="font/woff2"
-    href="https://s3.amazonaws.com/benetta.net/fonts/noto-sans/noto-sans-v11-latin-regular.woff2" />
+<!-- TrueType -->
+<link crossorigin rel="preload" as="font" type="font/ttf"
+    href="https://s3.amazonaws.com/benetta.net/fonts/poppins/Poppins-Regular.ttf" />
+<link crossorigin rel="preload" as="font" type="font/ttf"
+    href="https://s3.amazonaws.com/benetta.net/fonts/noto-sans/noto-sans-v21-latin-regular.ttf" />
+<link crossorigin rel="preload" as="font" type="font/ttf"
+    href="https://s3.amazonaws.com/benetta.net/fonts/noto-serif/NotoSerif-Regular.ttf" />
 
-<link rel="preload" as="font" type="font/woff2"
-    href="https://s3.amazonaws.com/benetta.net/fonts/noto-serif/noto-serif-v11-latin-regular.woff2" />
+<!-- WOFF2 -->
 <link rel="preload" as="font" type="font/woff2"
     href="https://s3.amazonaws.com/benetta.net/fonts/noto-serif/noto-serif-v11-latin-italic.woff2" />
 <link rel="preload" as="font" type="font/woff2"
     href="https://s3.amazonaws.com/benetta.net/fonts/noto-serif/noto-serif-v11-latin-700.woff2" />
 <link rel="preload" as="font" type="font/woff2"
     href="https://s3.amazonaws.com/benetta.net/fonts/noto-serif/noto-serif-v11-latin-700italic.woff2" />
-
-<link rel="preload" as="font" type="font/ttf"
-    href="https://s3.amazonaws.com/benetta.net/fonts/poppins/Poppins-Regular.ttf" />
-<link rel="preload" as="font" type="font/woff2"
-    href="https://s3.amazonaws.com/benetta.net/fonts/poppins/poppins-v15-latin-500.woff2" />
-<link rel="preload" as="font" type="font/woff2"
-    href="https://s3.amazonaws.com/benetta.net/fonts/poppins/poppins-v15-latin-700.woff2" />
 
 <link rel="preload" as="script"
     href="https://cdn.ampproject.org/v0.js" />
@@ -52,7 +50,7 @@ Sowa 23-05-27
 
 <style amp-custom>
 
-:root, * {
+:root {
     --on-ffffff:#ffffff;
     --on-595775:#595775;
     --on-cccccc:#cccccc;
@@ -60,6 +58,7 @@ Sowa 23-05-27
     --on-440044:#440044;
     --on-6c757d:#6c757d;
 
+/* inject UPDATE */
     --space-unit-v: 1rem;
     --space-xxxxs:  calc(0.125 * var(--space-unit-v)); 
     --space-xxxs:   calc(0.250 * var(--space-unit-v));
@@ -107,36 +106,34 @@ i {
 
 /******************
  *  Font: Noto Sans
- *  400 only; add more weights
+ *  TrueType
  */
 
 @font-face{
     font-family: NotoSans;
-    src:
-        url("https://s3.amazonaws.com/benetta.net/fonts/noto-sans/noto-sans-v21-latin-regular.ttf")
-            format("truetype"),
-        url("https://s3.amazonaws.com/benetta.net/fonts/noto-sans/noto-sans-v21-latin-regular.woff2")
-            format("woff2");
-    font-display: swap;
+    src: url("https://s3.amazonaws.com/benetta.net/fonts/noto-sans/noto-sans-v21-latin-regular.ttf") format("truetype");
     font-style: normal;
     font-weight: 400;
+    font-display: swap;
 }
 
 /*******************
  *  Font: Noto Serif
+ *  TrueType
  */
 
 @font-face {
     font-family: NotoSerif;
-    src:
-        url("https://s3.amazonaws.com/benetta.net/fonts/noto-serif/NotoSerif-Regular.ttf")
-            format("truetype"),
-        url("https://s3.amazonaws.com/benetta.net/fonts/noto-serif/noto-serif-v11-latin-regular.woff2")
-            format("woff2");
-    font-display: swap;
+    src: url("https://s3.amazonaws.com/benetta.net/fonts/noto-serif/NotoSerif-Regular.ttf") format("truetype");
     font-style: normal;
     font-weight: 400;
+    font-display: swap;
 }
+
+/*******************
+ *  Font: Noto Serif
+ *  WOFF2
+ */
 
 @font-face {
     font-family: NotoSerif;
@@ -153,9 +150,9 @@ i {
     src:
         url("https://s3.amazonaws.com/benetta.net/fonts/noto-serif/noto-serif-v11-latin-italic.woff2")
             format("woff2");
-    font-display: swap;
     font-style: italic;
     font-weight: 400;
+    font-display: swap;
 }
 
 @font-face {
@@ -170,32 +167,19 @@ i {
 
 /****************
  *  Font: Poppins
+ *  TrueType
  */
 
 @font-face {
     font-family: Poppins;
-    src:
-        url("https://s3.amazonaws.com/benetta.net/fonts/poppins/poppins-v15-latin-500.woff2")
-            format("woff2"),
-        url("https://s3.amazonaws.com/benetta.net/fonts/poppins/Poppins-Regular.ttf")
-            format("truetype");
-    font-display: swap;
+    src: url("https://s3.amazonaws.com/benetta.net/fonts/poppins/Poppins-Regular.ttf") format("truetype");
     font-style: normal;
-    font-weight: 500;
-}
-
-@font-face {
-    font-family: Poppins;
-    src:
-        url("https://s3.amazonaws.com/benetta.net/fonts/poppins/poppins-v15-latin-700.woff2")
-            format("woff2"),
     font-display: swap;
-    font-style: normal;
-    font-weight: 700;
 }
 
 /*************
  *  cover page
+ *  inject UPDATE
  */
 
 h1 {
@@ -725,7 +709,7 @@ Existential Graphs
 <!-- CSS is atomic: noto-serif-400-regular fs-20 lh-18 -->
 <amp-story-page id="sowa-12" data-page-no="2" data-item-label="How to say A cat is on a mat">
 <amp-story-grid-layer template="fill"><amp-img id="background-mottled-white" data-item-role="background" data-item-type="static" data-item-label="background-mottled-white" src="https://s3.amazonaws.com/benetta.net/media/background-svg/background-fractal-noise-w1650-h1500.svg" width="1650" height="1500" layout="responsive" animate-in="fade-in" animate-in-duration="2s"></amp-img></amp-story-grid-layer>
-<amp-story-grid-layer template="vertical" aspect-ratio=""><div class="top"><div class="t-c stb-l" animate-in="fade-in" animate-in-duration="4s" animate-in-delay="0.5s">
+<amp-story-grid-layer template="vertical"><div class="top"><div class="t-c stb-l" animate-in="fade-in" animate-in-duration="4s" animate-in-delay="0.5s">
 <h2 class="poppins-sans-500-regular fs-40">How to say &#x201C;A cat is on a mat.&#x201D;</h2>
 <h3 class="poppins-sans-500-regular fs-24"></h3></div>
 
@@ -751,7 +735,7 @@ Existential Graphs
 </amp-story-page>
 
 <amp-story-page id="sowa-13" data-page-no="3" data-item-label="EG Notation">
-<amp-story-grid-layer template="fill"><amp-img id="background-mottled-white" data-item-role="background" data-item-type="static" data-item-label="background-mottled-white" src="https://s3.amazonaws.com/benetta.net/media/background-svg/background-fractal-noise-w1650-h1500.svg" width="1650" height="1500" layout="responsive" animate-in="fade-in" animate-in-duration="2s"></amp-img></amp-story-grid-layer><amp-story-grid-layer template="vertical" aspect-ratio=""><div class="top"><div class="t-c stb-l" animate-in="fade-in" animate-in-duration="4s" animate-in-delay="0.5s"><h2 class="poppins-sans-500-regular fs-40">Existential Graph Notation</h2><h3 class="poppins-sans-500-regular fs-24"></h3></div><section animate-in="fade-in" animate-in-duration="4s" animate-in-delay="1.5s"><div style="width:58%; height:58%; padding-left:10vw;"><amp-img data-item-id="sowa-12-existential-graph" data-item-role="amp-story" data-item-type="has SVG source" layout="responsive" src="https://s3.amazonaws.com/benetta.net/story/sowa/sowa-12-w2440-h1751.webp" width="2440" height="1751"></amp-img></div></section></div></amp-story-grid-layer><amp-story-page-attachment layout="nodisplay" cta-image="https://s3.amazonaws.com/benetta.net/media/logo/ontomatica/ontomatica-symbol-w33-h36-color-1F64FF-bgnd-white.svg" cta-text="More information" data-title="Sample DL-DT-DD for attachment"><section class="p-s"><dl class="chartlegend"><div class="noto-sans-400-regular fs-16 lh-18 av">Abbervail Dream</div><dt class="noto-serif-400-regular fs-14 lh-14">Blue Diamonds</dt><dd class="noto-sans-400-regular fs-12 lh-10"><span class="c-11 mr-s"></span>Bright amazing and wonderful</dd><dd class="noto-sans-400-regular fs-12 lh-10"><span class="c-12 mr-s"></span>Dancing around the flames</dd><dd class="noto-sans-400-regular fs-12 lh-10"><span class="c-13 mr-s"></span>Everybody knows bird is word</dd><div class="noto-sans-400-regular fs-16 lh-18 av">Caramel Sensation</div><dt class="noto-serif-400-regular fs-14 lh-14">Dairy Cream</dt><dd class="noto-sans-400-regular fs-12 lh-10"><span class="c-14 mr-s"></span>Frosty the snowman is a boss</dd><dd class="noto-sans-400-regular fs-12 lh-10"><span class="c-15 mr-s"></span>Girls just want to have fun</dd><dd class="noto-sans-400-regular fs-12 lh-10"><span class="c-16 mr-s"></span>Got some popsicles in the cellar</dd><div class="noto-sans-400-regular fs-16 lh-18 av">Elusive Enchantment</div><dt class="noto-serif-400-regular fs-14 lh-14">Fat Chance Cinnamon</dt><dd class="noto-sans-400-regular fs-12 lh-10"><span class="c-17 mr-s"></span>Insomnia gives me time to</dd><dd class="noto-sans-400-regular fs-12 lh-10"><span class="c-18 mr-s"></span>Inspiration slaps me in the face</dd><dd class="noto-sans-400-regular fs-12 lh-10"><span class="c-19 mr-s"></span>Last chance for one last dance</dd><div class="noto-sans-400-regular fs-16 lh-18 av">Good Luck Charm</div><dt class="noto-serif-400-regular fs-14 lh-14">Hershey's Kiss</dt><dd class="noto-sans-400-regular fs-12 lh-10"><span class="c-20 mr-s"></span>Laugh all day for no reason</dd><dd class="noto-sans-400-regular fs-12 lh-10"><span class="c-21 mr-s"></span>Life is a box of chocolates</dd><dd class="noto-sans-400-regular fs-12 lh-10"><span class="c-22 mr-s"></span>Live like there is no tomorrow</dd><div class="noto-sans-400-regular fs-16 lh-18 av">Ice Cream Mix</div><dt class="noto-serif-400-regular fs-14 lh-14">Jack Daniels</dt><dd class="noto-sans-400-regular fs-12 lh-10"><span class="c-23 mr-s"></span>Make it up as you go</dd><dd class="noto-sans-400-regular fs-12 lh-10"><span class="c-24 mr-s"></span>Moms cookies make everything</dd><dd class="noto-sans-400-regular fs-12 lh-10"><span class="c-25 mr-s"></span>My room is an organized mess</dd><div class="noto-sans-400-regular fs-16 lh-18 av">Kitty Hawk</div><dt class="noto-serif-400-regular fs-14 lh-14">Last Man Standing</dt><dd class="noto-sans-400-regular fs-12 lh-10"><span class="c-26 mr-s"></span>Pluto is still a planet</dd><dd class="noto-sans-400-regular fs-12 lh-10"><span class="c-27 mr-s"></span>Six words can mean the world</dd><dd class="noto-sans-400-regular fs-12 lh-10"><span class="c-28 mr-s"></span>Sleeping with a giant bear</dd><div class="noto-sans-400-regular fs-16 lh-18 av">Made You Look</div><dt class="noto-serif-400-regular fs-14 lh-14">Nabisco Cracker</dt><dd class="noto-sans-400-regular fs-12 lh-10"><span class="c-29 mr-s"></span>Sour candy makes me twitch</dd><dd class="noto-sans-400-regular fs-12 lh-10"><span class="c-30 mr-s"></span>The sky is not the limit</dd><dd class="noto-sans-400-regular fs-12 lh-10"><span class="c-31 mr-s"></span>There always gonna be another</dd><div class="noto-sans-400-regular fs-16 lh-18 av">One in a Million</div><dt class="noto-serif-400-regular fs-14 lh-14">Peach Blossom</dt><dd class="noto-sans-400-regular fs-12 lh-10"><span class="c-32 mr-s"></span>There no place like grandmas</dd><dd class="noto-sans-400-regular fs-12 lh-10"><span class="c-33 mr-s"></span>Why whisper what you shout</dd><dd class="noto-sans-400-regular fs-12 lh-10"><span class="c-34 mr-s"></span>Your the apple to my pie</dd></dl></section><hr></amp-story-page-attachment>
+<amp-story-grid-layer template="fill"><amp-img id="background-mottled-white" data-item-role="background" data-item-type="static" data-item-label="background-mottled-white" src="https://s3.amazonaws.com/benetta.net/media/background-svg/background-fractal-noise-w1650-h1500.svg" width="1650" height="1500" layout="responsive" animate-in="fade-in" animate-in-duration="2s"></amp-img></amp-story-grid-layer><amp-story-grid-layer template="vertical"><div class="top"><div class="t-c stb-l" animate-in="fade-in" animate-in-duration="4s" animate-in-delay="0.5s"><h2 class="poppins-sans-500-regular fs-40">Existential Graph Notation</h2><h3 class="poppins-sans-500-regular fs-24"></h3></div><section animate-in="fade-in" animate-in-duration="4s" animate-in-delay="1.5s"><div style="width:58%; height:58%; padding-left:10vw;"><amp-img data-item-id="sowa-12-existential-graph" data-item-role="amp-story" data-item-type="has SVG source" layout="responsive" src="https://s3.amazonaws.com/benetta.net/story/sowa/sowa-12-w2440-h1751.webp" width="2440" height="1751"></amp-img></div></section></div></amp-story-grid-layer><amp-story-page-attachment layout="nodisplay" cta-image="https://s3.amazonaws.com/benetta.net/media/logo/ontomatica/ontomatica-symbol-w33-h36-color-1F64FF-bgnd-white.svg" cta-text="More information" data-title="Sample DL-DT-DD for attachment"><section class="p-s"><dl class="chartlegend"><div class="noto-sans-400-regular fs-16 lh-18 av">Abbervail Dream</div><dt class="noto-serif-400-regular fs-14 lh-14">Blue Diamonds</dt><dd class="noto-sans-400-regular fs-12 lh-10"><span class="c-11 mr-s"></span>Bright amazing and wonderful</dd><dd class="noto-sans-400-regular fs-12 lh-10"><span class="c-12 mr-s"></span>Dancing around the flames</dd><dd class="noto-sans-400-regular fs-12 lh-10"><span class="c-13 mr-s"></span>Everybody knows bird is word</dd><div class="noto-sans-400-regular fs-16 lh-18 av">Caramel Sensation</div><dt class="noto-serif-400-regular fs-14 lh-14">Dairy Cream</dt><dd class="noto-sans-400-regular fs-12 lh-10"><span class="c-14 mr-s"></span>Frosty the snowman is a boss</dd><dd class="noto-sans-400-regular fs-12 lh-10"><span class="c-15 mr-s"></span>Girls just want to have fun</dd><dd class="noto-sans-400-regular fs-12 lh-10"><span class="c-16 mr-s"></span>Got some popsicles in the cellar</dd><div class="noto-sans-400-regular fs-16 lh-18 av">Elusive Enchantment</div><dt class="noto-serif-400-regular fs-14 lh-14">Fat Chance Cinnamon</dt><dd class="noto-sans-400-regular fs-12 lh-10"><span class="c-17 mr-s"></span>Insomnia gives me time to</dd><dd class="noto-sans-400-regular fs-12 lh-10"><span class="c-18 mr-s"></span>Inspiration slaps me in the face</dd><dd class="noto-sans-400-regular fs-12 lh-10"><span class="c-19 mr-s"></span>Last chance for one last dance</dd><div class="noto-sans-400-regular fs-16 lh-18 av">Good Luck Charm</div><dt class="noto-serif-400-regular fs-14 lh-14">Hershey's Kiss</dt><dd class="noto-sans-400-regular fs-12 lh-10"><span class="c-20 mr-s"></span>Laugh all day for no reason</dd><dd class="noto-sans-400-regular fs-12 lh-10"><span class="c-21 mr-s"></span>Life is a box of chocolates</dd><dd class="noto-sans-400-regular fs-12 lh-10"><span class="c-22 mr-s"></span>Live like there is no tomorrow</dd><div class="noto-sans-400-regular fs-16 lh-18 av">Ice Cream Mix</div><dt class="noto-serif-400-regular fs-14 lh-14">Jack Daniels</dt><dd class="noto-sans-400-regular fs-12 lh-10"><span class="c-23 mr-s"></span>Make it up as you go</dd><dd class="noto-sans-400-regular fs-12 lh-10"><span class="c-24 mr-s"></span>Moms cookies make everything</dd><dd class="noto-sans-400-regular fs-12 lh-10"><span class="c-25 mr-s"></span>My room is an organized mess</dd><div class="noto-sans-400-regular fs-16 lh-18 av">Kitty Hawk</div><dt class="noto-serif-400-regular fs-14 lh-14">Last Man Standing</dt><dd class="noto-sans-400-regular fs-12 lh-10"><span class="c-26 mr-s"></span>Pluto is still a planet</dd><dd class="noto-sans-400-regular fs-12 lh-10"><span class="c-27 mr-s"></span>Six words can mean the world</dd><dd class="noto-sans-400-regular fs-12 lh-10"><span class="c-28 mr-s"></span>Sleeping with a giant bear</dd><div class="noto-sans-400-regular fs-16 lh-18 av">Made You Look</div><dt class="noto-serif-400-regular fs-14 lh-14">Nabisco Cracker</dt><dd class="noto-sans-400-regular fs-12 lh-10"><span class="c-29 mr-s"></span>Sour candy makes me twitch</dd><dd class="noto-sans-400-regular fs-12 lh-10"><span class="c-30 mr-s"></span>The sky is not the limit</dd><dd class="noto-sans-400-regular fs-12 lh-10"><span class="c-31 mr-s"></span>There always gonna be another</dd><div class="noto-sans-400-regular fs-16 lh-18 av">One in a Million</div><dt class="noto-serif-400-regular fs-14 lh-14">Peach Blossom</dt><dd class="noto-sans-400-regular fs-12 lh-10"><span class="c-32 mr-s"></span>There no place like grandmas</dd><dd class="noto-sans-400-regular fs-12 lh-10"><span class="c-33 mr-s"></span>Why whisper what you shout</dd><dd class="noto-sans-400-regular fs-12 lh-10"><span class="c-34 mr-s"></span>Your the apple to my pie</dd></dl></section><hr></amp-story-page-attachment>
 </amp-story-page>
 
 <!-- repositioned; move to EWB -->
@@ -759,7 +743,7 @@ Existential Graphs
 
 <amp-story-grid-layer template="fill"><amp-img id="" data-item-role="background" data-item-type="static" data-item-label="background-mottled-white" src="https://s3.amazonaws.com/benetta.net/media/background-svg/background-fractal-noise-w1650-h1500.svg" width="1650" height="1500" layout="responsive"></amp-img></amp-story-grid-layer>
 
-<amp-story-grid-layer template="vertical" aspect-ratio="">
+<amp-story-grid-layer template="vertical">
 <div class="top"><div class="t-c stb-l" animate-in="fade-in" animate-in-duration="4s" animate-in-delay="0.5s"><h2 class="poppins-sans-500-regular fs-40 lh-10">The Core EG Notation</h2>
 <div class="sp-3"></div>
 <h3 class="poppins-sans-500-regular fs-14 lh-08">
@@ -863,7 +847,10 @@ Some cat is on something that is not a mat:&#8195;
 </amp-story-page>
 
 <amp-story-page id="sowa-15" data-page-no="5" data-item-label="EGs With Negation">
-
+<!--
+The attribute 'animate-in' may not appear in tag 'amp-story-grid-layer'.
+The attribute 'animate-in-duration' may not appear in tag 'amp-story-grid-layer'.
+-->
 <amp-story-grid-layer template="fill" animate-in="fade-in" animate-in-duration="0.5s">
 <amp-img id="" data-item-role="background" data-item-type="static" data-item-label="background-mottled-white" src="https://s3.amazonaws.com/benetta.net/media/background-svg/background-fractal-noise-w1650-h1500.svg" width="1650" height="1500" layout="responsive"></amp-img>
 </amp-story-grid-layer>
@@ -909,7 +896,10 @@ EGs With Negation
 </amp-story-page>
 
 <amp-story-page id="sowa-16" data-page-no="6" data-item-label="Nested Ovals">
-
+<!--
+The attribute 'animate-in' may not appear in tag 'amp-story-grid-layer'.
+The attribute 'animate-in-duration' may not appear in tag 'amp-story-grid-layer'.
+-->
 <amp-story-grid-layer template="fill" animate-in="fade-in" animate-in-duration="0.5s">
 <amp-img id="" data-item-role="background" data-item-type="static" data-item-label="background-mottled-white" src="https://s3.amazonaws.com/benetta.net/media/background-svg/background-fractal-noise-w1650-h1500.svg" width="1650" height="1500" layout="responsive"></amp-img>
 </amp-story-grid-layer>
@@ -960,7 +950,10 @@ Nested Ovals
 
 <!-- modified -->
 <amp-story-page id="sowa-17" data-page-no="7" data-item-label="Boolean Combinations">
-
+<!--
+The attribute 'animate-in' may not appear in tag 'amp-story-grid-layer'.
+The attribute 'animate-in-duration' may not appear in tag 'amp-story-grid-layer'.
+-->
 <amp-story-grid-layer template="fill" animate-in="fade-in" animate-in-duration="0.5s">
 <amp-img id="" data-item-role="background" data-item-type="static" data-item-label="background-mottled-white" src="https://s3.amazonaws.com/benetta.net/media/background-svg/background-fractal-noise-w1650-h1500.svg" width="1650" height="1500" layout="responsive"></amp-img>
 </amp-story-grid-layer>
@@ -1097,6 +1090,7 @@ may be inferred from a failure to observe
 <amp-story-page id="sowa-20" data-page-no="10" data-item-label="Reasoning">
 <amp-story-grid-layer template="fill"><amp-img id="background-mottled-white" data-item-role="background" data-item-type="static" data-item-label="background-mottled-white" src="https://s3.amazonaws.com/benetta.net/media/background-svg/background-fractal-noise-w1650-h1500.svg" width="1650" height="1500" layout="responsive" animate-in="fade-in" animate-in-duration="2s"></amp-img></amp-story-grid-layer>
 
+<!-- error - aspect-ratio="5:3.4" -->
 <amp-story-grid-layer template="vertical" aspect-ratio="5:3.4"><div class="top"><div class="t-c stb-l" animate-in="fade-in" animate-in-duration="4s" animate-in-delay="0.5s"><h2 class="poppins-sans-500-regular fs-40">Reasoning</h2><h3 class="poppins-sans-500-regular fs-24"></h3></div></div>
 
 <section animate-in="fade-in" animate-in-duration="4s" animate-in-delay="1.5s">
@@ -1295,6 +1289,7 @@ A relation attached to an oval makes a metalevel comment about the proposition e
 
 <div class="sp-2"></div>
 <div style="width:80%; height:80%; padding-left:10vw;">
+<!-- convert to amp-img -->
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 441.466 113.402" xml:space="preserve" color-interpolation-filters="sRGB" style="fill:none;fill-rule:evenodd;font-size:12px;overflow:visible;stroke-linecap:square;stroke-miterlimit:3">
 <style>.mtl-st1{fill:none;stroke:none;stroke-linecap:butt;stroke-width:.75}.mtl-st2{fill:#000;font-family:NotoSans;font-size:1.5em}</style><g transform="translate(18.551 -38.701)"><path class="mtl-st1" d="M0 77.402h165.099v36H0z"/><text y="100.8" class="mtl-st2">You are a good girl</text></g><g transform="translate(257.96 -31.951)"><path class="mtl-st1" d="M0 61.652h182.756v51.75H0z"/><text y="92.93" class="mtl-st2">is much to be wished</text></g><g transform="translate(2.701 -2.701)"><ellipse cx="98.55" cy="59.402" rx="98.55" ry="54" style="fill:none;stroke:#000;stroke-linecap:butt;stroke-width:2.70113"/></g><g transform="translate(200.572 -56.701)"><path d="M0 113.4h49.12" style="stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2.70113"/></g></svg>
 </div>
@@ -1352,7 +1347,7 @@ Reasoning and the Logic of Things
 
 <amp-story-grid-layer template="fill"><amp-img id="" data-item-role="background" data-item-type="static" data-item-label="background-mottled-white" src="https://s3.amazonaws.com/benetta.net/media/background-svg/background-fractal-noise-w1650-h1500.svg" width="1650" height="1500" layout="responsive"></amp-img></amp-story-grid-layer>
 
-<amp-story-grid-layer template="vertical" aspect-ratio=""><div class="top"><div class="t-c stb-l" animate-in="fade-in" animate-in-duration="4s" animate-in-delay="0.5s"><h2 class="poppins-sans-500-regular fs-40">One of Peirce&#x2019;s Examples</h2></div></div>
+<amp-story-grid-layer template="vertical"><div class="top"><div class="t-c stb-l" animate-in="fade-in" animate-in-duration="4s" animate-in-delay="0.5s"><h2 class="poppins-sans-500-regular fs-40">One of Peirce&#x2019;s Examples</h2></div></div>
 
 
 <section animate-in="fade-in" animate-in-duration="4s" animate-in-delay="1.5s">
@@ -1360,6 +1355,7 @@ Reasoning and the Logic of Things
 
 <div class="item-a-11">
 <div class="sp-5"></div>
+<!-- convert to amp-img -->
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 617.141 248.871" xml:space="preserve" color-interpolation-filters="sRGB" style="fill:none;fill-rule:evenodd;font-size:12px;overflow:visible;stroke-linecap:square;stroke-miterlimit:3">
 <style>.rsl-st1{fill:none}.rsl-st2{stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.92938}.rsl-st3{fill:none;stroke:none;stroke-linecap:butt;stroke-width:.75}.rsl-st4{fill:#000;font-family:NotoSans;font-size:1.5em}</style><g transform="translate(.965 -17.063)"><path d="M18.91 248.87h-5.17C6.17 248.87 0 236.52 0 221.38V59.23C0 44.1 6.17 31.75 13.74 31.75h5.17v217.12Z" class="rsl-st1"/><path d="M18.91 248.87h-5.17C6.17 248.87 0 236.52 0 221.38V59.23C0 44.1 6.17 31.75 13.74 31.75h5.17" class="rsl-st2"/></g><g transform="translate(.965 -160.724)"><path d="M0 248.87h18.91" class="rsl-st2"/></g><g transform="translate(.965 -99.67)"><path d="M0 248.87h18.91" class="rsl-st2"/></g><g transform="translate(122.763 -160.724)"><path d="M0 248.87h63.32" class="rsl-st2"/></g><g transform="translate(211.791 -54.643)"><path d="M0 248.87h27.28" class="rsl-st2"/></g><g transform="translate(186.047 -127.313)"><path d="M36.16 248.87H17.94C8.06 248.87 0 232.94 0 213.43 0 193.92 8.06 178 17.94 178h18.29l-.07 70.87Z" class="rsl-st1"/><path d="M36.16 248.87H17.94C8.06 248.87 0 232.94 0 213.43 0 193.92 8.06 178 17.94 178h18.29" class="rsl-st2"/></g><g transform="translate(157.787 -18.188)"><path d="M0 166.55h27.17c14.73 0 26.76 18.5 26.76 41.16 0 22.66-12.03 41.16-26.76 41.16h-1.06L0 166.55Z" class="rsl-st1"/><path d="M0 166.55h27.17c14.73 0 26.76 18.5 26.76 41.16 0 22.66-12.03 41.16-26.76 41.16h-1.06" class="rsl-st2"/></g><g transform="translate(26.978 -219.996)"><path class="rsl-st3" d="M0 220.746h108.327v28.125H0z"/><text y="240.21" class="rsl-st4">is a Stagirite</text></g><g transform="translate(26.978 -149.25)"><path class="rsl-st3" d="M0 222.434h69.969v26.438H0z"/><text y="241.05" class="rsl-st4">teaches</text></g><g transform="translate(228.601 -184.687)"><path class="rsl-st3" d="M0 221.871h144.623v27H0z"/><text y="240.77" class="rsl-st4">is a Macedonian</text></g><g transform="translate(228.601 -108.187)"><path class="rsl-st3" d="M0 212.871h169.058v36H0z"/><text y="236.27" class="rsl-st4">conquers the world</text></g><g transform="translate(26.978 -85.688)"><path class="rsl-st3" d="M0 221.309h122.655v27.563H0z"/><text y="240.49" class="rsl-st4">is a disciple of</text></g><g transform="translate(26.978 -.75)"><path class="rsl-st3" d="M0 213.996h153.111v34.875H0z"/><text y="236.83" class="rsl-st4">is an opponent of</text></g><g transform="translate(242.961 -35.625)"><path class="rsl-st3" d="M0 212.309h373.43v36.563H0z"/><text y="235.99" class="rsl-st4">is a philosopher admired by Church Fathers</text></g></svg>
 </div>
@@ -1411,7 +1407,7 @@ This subset of logic can coded in RDF and stored in graph databases, as illustra
 
 <amp-story-grid-layer template="fill"><amp-img id="" data-item-role="background" data-item-type="static" data-item-label="background-mottled-white" src="https://s3.amazonaws.com/benetta.net/media/background-svg/background-fractal-noise-w1650-h1500.svg" width="1650" height="1500" layout="responsive"></amp-img></amp-story-grid-layer>
 
-<amp-story-grid-layer template="vertical" aspect-ratio=""><div class="top"><div class="t-c stb-l" animate-in="fade-in" animate-in-duration="4s" animate-in-delay="0.5s"><h2 class="poppins-sans-500-regular fs-40">Peirce&#x2019;s Example in RDF</h2></div></div>
+<amp-story-grid-layer template="vertical"><div class="top"><div class="t-c stb-l" animate-in="fade-in" animate-in-duration="4s" animate-in-delay="0.5s"><h2 class="poppins-sans-500-regular fs-40">Peirce&#x2019;s Example in RDF</h2></div></div>
 
 <section animate-in="fade-in" animate-in-duration="4s" animate-in-delay="1.5s">
 <div class="grid-a">
@@ -1458,6 +1454,7 @@ RDF Visualization:<br>Directed Graph
 <section animate-in="fade-in" animate-in-duration="4s" animate-in-delay="1.5s">
 
 <div style="width:60%; height:60%; padding-left: 100px;">
+<!-- convert to amp-img -->
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 471.583 196.843" xml:space="preserve" color-interpolation-filters="sRGB" style="fill:none;fill-rule:evenodd;font-size:12px;overflow:visible;stroke-linecap:square;stroke-miterlimit:3"><style>.laa-st1{fill:none;stroke:none;stroke-linecap:butt;stroke-width:.75}.laa-st2{fill:#000;font-family:NotoSans;font-size:1.5em}.laa-st3{stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.92938}.laa-st4{fill:none}</style><g transform="translate(.75 -142.179)"><path class="laa-st1" d="M0 160.562h75.567v36.281H0z"/><text y="184.1" class="laa-st2">Aristotle</text></g><g transform="translate(131.126 -160.179)"><path class="laa-st1" d="M0 160.929h75.603v35.915H0z"/><text y="184.29" class="laa-st2">Stagirite</text></g><g transform="translate(270.311 -142.708)"><path class="laa-st1" d="M0 161.372h90.382v35.471H0z"/><text y="184.51" class="laa-st2">Alexander</text></g><g transform="translate(270.311 -106.179)"><path class="laa-st1" d="M0 160.843h200.522v36H0z"/><text y="184.24" class="laa-st2">conqueror of the world</text></g><g transform="translate(270.311 -.75)"><path class="laa-st1" d="M0 160.843h200.522v36H0z"/><text y="184.24" class="laa-st2">conqueror of the world</text></g><g transform="translate(131.126 -125.304)"><path class="laa-st1" d="M0 161.968h69.969v34.875H0z"/><text y="184.81" class="laa-st2">teaches</text></g><g transform="translate(131.126 -50.25)"><path class="laa-st1" d="M0 160.843h75.603v36H0z"/><text y="184.24" class="laa-st2">Stagirite</text></g><g transform="translate(131.126 -14.25)"><path class="laa-st1" d="M0 160.843h69.969v36H0z"/><text y="184.24" class="laa-st2">teaches</text></g><g transform="translate(45.432 -32.25)"><path class="laa-st1" d="M0 160.843h23.548v36H0z"/><text y="184.24" class="laa-st2">λx</text></g><g transform="translate(270.311 -36.75)"><path class="laa-st1" d="M0 166.468h28.605v30.375H0z"/><text y="187.06" class="laa-st2">λy</text></g><g transform="translate(77.632 -142.717)"><g transform="translate(0 -16.863)"><path d="M0 196.84h28.32" class="laa-st3"/></g><g transform="translate(28.323)"><path d="M19.1 196.84c-10.49 0-19.1-7.52-19.1-16.67 0-9.18 8.61-16.67 19.1-16.67v33.34Z" class="laa-st4"/><path d="M19.1 196.84c-10.49 0-19.1-7.52-19.1-16.67 0-9.18 8.61-16.67 19.1-16.67" class="laa-st3"/></g></g><g transform="translate(216.072 -125.893)"><g transform="translate(0 -16.824)"><path d="M0 196.84h28.32" class="laa-st3"/></g><g transform="translate(28.323)"><path d="M19.1 196.84c-10.49 0-19.1-7.52-19.1-16.67 0-9.18 8.61-16.67 19.1-16.67v33.34Z" class="laa-st4"/><path d="M19.1 196.84c-10.49 0-19.1-7.52-19.1-16.67 0-9.18 8.61-16.67 19.1-16.67" class="laa-st3"/></g></g><g transform="translate(79.56 -32.677)"><g transform="translate(0 -16.824)"><path d="M0 196.84h28.32" class="laa-st3"/></g><g transform="translate(28.323)"><path d="M19.1 196.84c-10.49 0-19.1-7.52-19.1-16.67 0-9.18 8.61-16.67 19.1-16.67v33.34Z" class="laa-st4"/><path d="M19.1 196.84c-10.49 0-19.1-7.52-19.1-16.67 0-9.18 8.61-16.67 19.1-16.67" class="laa-st3"/></g></g><g transform="translate(216.072 -17.293)"><g transform="translate(0 -16.824)"><path d="M0 196.84h28.32" class="laa-st3"/></g><g transform="translate(28.323)"><path d="M19.1 196.84c-10.49 0-19.1-7.52-19.1-16.67 0-9.18 8.61-16.67 19.1-16.67v33.34Z" class="laa-st4"/><path d="M19.1 196.84c-10.49 0-19.1-7.52-19.1-16.67 0-9.18 8.61-16.67 19.1-16.67" class="laa-st3"/></g></g></svg>
 </div>
 
@@ -2298,6 +2295,7 @@ Pedro is a farmer. He owns a donkey.
 </dt>
 
 <div style="width:40%; height:40%; margin-left:14vw;">
+<!-- convert to amp-img -->
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 381.344 174.046" xml:space="preserve" color-interpolation-filters="sRGB" style="fill:none;fill-rule:evenodd;font-size:12px;overflow:visible;stroke-linecap:square;stroke-miterlimit:3">
 
 <style>.lqt-st1{fill:none;stroke:none;stroke-linecap:butt;stroke-width:.75}.lqt-st2{fill:#000;font-family:NotoSans;font-size:1.5em}.lqt-st3,.lqt-st4{stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.54351}.lqt-st4{fill:none}</style><g transform="translate(.772 -.772)"><g transform="translate(99.212 -16.296)"><path class="lqt-st1" d="M0 138.046h69.508v36H0z"/><text y="161.45" class="lqt-st2">donkey</text></g><g transform="translate(24.044 -27.118)"><path class="lqt-st1" d="M0 159.692h47.899v14.355H0z"/><text y="172.27" class="lqt-st2">owns</text></g><g transform="translate(0 -34.295)"><path d="M0 174.05h18.06" class="lqt-st3"/></g><g transform="translate(72.625 -34.295)"><path d="M0 174.05h23.35" class="lqt-st3"/></g><g transform="translate(198.643 -91.525)"><path class="lqt-st4" d="M0 103.171h181.158v70.875H0z"/></g><g transform="translate(105 -136.525)"><path class="lqt-st1" d="M0 138.046h57.931v36H0z"/><text x="3.75" y="161.45" class="lqt-st2">Pedro</text></g><g transform="translate(99.212 -83.65)"><path class="lqt-st1" d="M0 138.046h69.508v36H0z"/><text x="5.68" y="161.45" class="lqt-st2">farmer</text></g><g transform="rotate(90 137.442 170.571)"><path d="M0 174.05h25.66" class="lqt-st3"/></g><g transform="translate(207.918 -95.208)"><path class="lqt-st1" d="M0 138.024h171.523v36.022H0z"/><text y="161.44" class="lqt-st2">Pedro(x) farmer(x)</text></g><g transform="translate(207.918 -128.76)"><path class="lqt-st1" d="M0 144.951h25.765v29.096H0z"/><text y="164.9" class="lqt-st2">x</text></g><g transform="translate(198.403)"><path class="lqt-st4" d="M0 103.171h181.158v70.875H0z"/></g><g transform="translate(207.678 -37.235)"><path class="lqt-st1" d="M0 144.951h53.402v29.096H0z"/><text y="164.9" class="lqt-st2">y   z</text></g><g transform="translate(204.149 -4.39)"><path class="lqt-st1" d="M0 138.024h171.523v36.022H0z"/><text y="161.44" class="lqt-st2">owns(y,z) donkey(z)</text></g></g></svg>
@@ -2308,7 +2306,7 @@ Combine them by connecting EG lines or merging DRS boxes&#x003A;
 </dt>
 
 <div style="width:40%; height:40%; margin-left:14vw;">
-
+<!-- convert to amp-img -->
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 438.987 107.272" xml:space="preserve" color-interpolation-filters="sRGB" style="fill:none;fill-rule:evenodd;font-size:12px;overflow:visible;stroke-linecap:square;stroke-miterlimit:3">
 
 <style>.lqb-st2{fill:none;stroke:none;stroke-linecap:butt;stroke-width:.75}.lqb-st3{fill:#000;font-family:NotoSans;font-size:1.5em}.lqb-st4{stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.54351}</style><g transform="translate(240.281 -.772)"><path style="fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.54351" d="M0 2.382h197.934v104.89H0z"/></g><g transform="translate(248.046 -70.522)"><path class="lqb-st2" d="M0 71.272h117.824v36H0z"/><text y="94.67" class="lqb-st3">x   y   z   x=y</text></g><g transform="translate(248.046 -39.88)"><path class="lqb-st2" d="M0 77.266h165.074v30.006H0z"/><text y="97.67" class="lqb-st3">Pedro(x) farmer(x)</text></g><g transform="translate(248.046 -2.051)"><path class="lqb-st2" d="M0 71.272h182.029v36H0z"/><text y="94.67" class="lqb-st3">owns(y,z) donkey(z)</text></g><g transform="translate(.75 -10.301)"><g transform="translate(5.788 -53.162)"><path class="lqb-st2" d="M0 71.272h57.931v36H0z"/><text x="3.75" y="94.67" class="lqb-st3">Pedro</text></g><g><path class="lqb-st2" d="M0 71.272h69.508v36H0z"/><text x="5.68" y="94.67" class="lqb-st3">farmer</text></g><g transform="rotate(90 47.23 94.795)"><path d="M0 107.27h31.06" class="lqb-st4"/></g><g transform="translate(36.256 -26.195)"><g transform="translate(115.148)"><path class="lqb-st2" d="M0 71.272h69.508v36H0z"/><text y="94.67" class="lqb-st3">donkey</text></g><g transform="translate(33.905)"><path class="lqb-st2" d="M0 71.272h47.899v36H0z"/><text x="1.56" y="94.67" class="lqb-st3">owns</text></g><g transform="rotate(180 15.358 98.272)"><path d="M0 107.27h30.72" class="lqb-st4"/></g><g transform="translate(83.048 -18)"><path d="M0 107.27h23.46" class="lqb-st4"/></g></g></g></svg>
@@ -2360,7 +2358,7 @@ EG on top; DRS on bottom.
 </dt>
 
 <div style="width:55%; height:55%; margin-left:10vw;">
-
+<!-- convert to amp-img -->
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 758.079 461.182" xml:space="preserve" color-interpolation-filters="sRGB" style="fill:none;fill-rule:evenodd;font-size:12px;overflow:visible;stroke-linecap:square;stroke-miterlimit:3"><style>.dse-st1{fill:none;stroke:none;stroke-linecap:butt;stroke-width:.75}.dse-st2,.dse-st3{fill:#000;font-family:NotoSans;font-size:1.5em}.dse-st3{font-size:2.50001em}.dse-st4{fill:none;stroke-width:.771753}.dse-st4,.dse-st6,.dse-st7{stroke:#000;stroke-linecap:butt}.dse-st6{fill:#fff;stroke-width:.771753}.dse-st7{stroke-width:1.15763}.dse-st8{fill:none}</style><g transform="translate(.772 -.772)"><g transform="translate(250.821 -108.429)"><path class="dse-st1" d="M0 407.182h254.893v54H0z"/><text x="5.38" y="439.58" class="dse-st2">Jones(x)   Smith(y)   Cooper(z)</text></g><g transform="translate(340.955 -144.429)"><path class="dse-st1" d="M0 424.285h74.625v36.897H0z"/><text x="9.69" y="448.13" class="dse-st2">x   y   z</text></g><g transform="translate(470.111 -53.668)"><path class="dse-st1" d="M0 425.182h35.438v36H0z"/><text x="10.1" y="452.18" class="dse-st3">v</text></g><g><path class="dse-st4" d="M0 280.809h756.536v180.372H0z"/></g><g transform="translate(245.617 -53.668)"><path class="dse-st1" d="M0 425.182h35.438v36H0z"/><text x="10.1" y="452.18" class="dse-st3">v</text></g><g transform="translate(16.018 -25.989)"><g transform="translate(10.708 -37.714)"><path class="dse-st1" d="M0 426.896h90.345v34.286H0z"/><text y="449.44" class="dse-st2">owns(x,u)</text></g><g transform="translate(11.565 -54.857)"><path class="dse-st1" d="M0 425.142h34.714v36.039H0z"/><text y="448.56" class="dse-st2">u</text></g><g><path class="dse-st4" d="M0 369.823h227.25v91.359H0z"/></g><g transform="translate(107.192 -16.888)"><path class="dse-st1" d="M0 425.182h90.345v36H0z"/><text y="448.58" class="dse-st2">semantics</text></g><g transform="translate(107.192 -36.78)"><path class="dse-st1" d="M0 424.057h73.839v37.125H0z"/><text y="448.02" class="dse-st2">book on</text></g><g transform="translate(195.148 -16.989)"><path class="dse-st1" d="M0 425.142h34.714v36.039H0z"/><text y="448.56" class="dse-st2">(u)</text></g></g><g transform="translate(284.649 -25.989)"><g transform="translate(16.286 -37.714)"><path class="dse-st1" d="M0 426.896h90.345v34.286H0z"/><text y="449.44" class="dse-st2">owns(y,v)</text></g><g transform="translate(17.143 -54.857)"><path class="dse-st1" d="M0 425.142h34.714v36.039H0z"/><text y="448.56" class="dse-st2">v</text></g><g><path class="dse-st4" d="M0 369.823h183.971v91.359H0z"/></g><g transform="translate(151.869 -14.417)"><path class="dse-st1" d="M0 425.142h34.714v36.039H0z"/><text y="448.56" class="dse-st2">(v)</text></g><g transform="translate(109.667 -14.345)"><path class="dse-st1" d="M0 425.182h51.75v36H0z"/><text y="448.58" class="dse-st2">logic</text></g><g transform="translate(109.667 -37.208)"><path class="dse-st1" d="M0 424.057h73.839v37.125H0z"/><text y="448.02" class="dse-st2">book on</text></g></g><g transform="translate(507.857 -25.989)"><g transform="translate(16.286 -37.714)"><path class="dse-st1" d="M0 426.896h90.345v34.286H0z"/><text y="449.44" class="dse-st2">owns(z,w)</text></g><g transform="translate(17.143 -54.857)"><path class="dse-st1" d="M0 425.142h34.714v36.039H0z"/><text y="448.56" class="dse-st2">w</text></g><g><path class="dse-st4" d="M0 369.823h236.143v91.359H0z"/></g><g transform="translate(119.306 -16.888)"><path class="dse-st1" d="M0 425.182h90.345v36H0z"/><text y="448.58" class="dse-st2">semantics</text></g><g transform="translate(119.306 -36.78)"><path class="dse-st1" d="M0 424.057h73.839v37.125H0z"/><text y="448.02" class="dse-st2">book on</text></g><g transform="translate(206.833 -16.131)"><path class="dse-st1" d="M0 425.142h34.714v36.039H0z"/><text y="448.56" class="dse-st2">(w)</text></g></g><g transform="translate(71.033 -229.018)"><g><ellipse cx="307.235" cy="379.619" rx="307.235" ry="81.563" style="fill:#e5e5e5;stroke:#000;stroke-linecap:butt;stroke-width:.771753"/></g><g transform="translate(41.846 -39.596)"><ellipse cx="87.75" cy="416.182" rx="87.75" ry="45" class="dse-st6"/></g><g transform="translate(188.096 -195.75)"><path class="dse-st1" d="M0 426.29h70.609v34.892H0z"/><text x="10.82" y="449.14" class="dse-st2">Smith</text></g><g transform="translate(.22 -192.375)"><path class="dse-st1" d="M0 425.165h50.214v36.017H0z"/><text x="2.26" y="448.57" class="dse-st2">Jones</text></g><g transform="translate(366.151 -194.625)"><path class="dse-st1" d="M0 425.182h83.508v36H0z"/><text x="10.85" y="448.58" class="dse-st2">Cooper</text></g><g transform="translate(52.045 -57.596)"><g transform="translate(64.755)"><path class="dse-st1" d="M0 425.182h90.345v36H0z"/><text y="448.58" class="dse-st2">semantics</text></g><g transform="translate(48.487 -38.187)"><path d="M0 461.18h10.46" class="dse-st7"/></g><g transform="translate(0 -19.892)"><path class="dse-st1" d="M0 424.79h49.467v36.392H0z"/><text y="448.39" class="dse-st2">owns</text></g><g transform="translate(64.755 -19.892)"><path class="dse-st1" d="M0 424.057h73.839v37.125H0z"/><text y="448.02" class="dse-st2">book on</text></g></g><g transform="translate(425.42 -41.104)"><g><ellipse cx="80.438" cy="416.182" rx="80.438" ry="45" class="dse-st6"/></g><g transform="translate(7.904 -15.99)"><g transform="translate(64.755)"><path class="dse-st1" d="M0 425.182h80.312v36H0z"/><text y="448.58" class="dse-st2">unicorns</text></g><g transform="translate(48.487 -39.189)"><path d="M0 461.18h10.46" class="dse-st7"/></g><g transform="translate(0 -20.894)"><path class="dse-st1" d="M0 424.79h49.467v36.392H0z"/><text y="448.39" class="dse-st2">owns</text></g><g transform="translate(64.755 -20.894)"><path class="dse-st1" d="M0 424.057h73.839v37.125H0z"/><text y="448.02" class="dse-st2">book on</text></g></g></g><g transform="translate(240.242 -41.104)"><ellipse cx="80.438" cy="416.182" rx="80.438" ry="45" class="dse-st6"/></g><g transform="translate(251.382 -57.47)"><g transform="translate(64.755)"><path class="dse-st1" d="M0 425.182h51.75v36H0z"/><text y="448.58" class="dse-st2">logic</text></g><g transform="translate(48.487 -41.158)"><path d="M0 461.18h10.46" class="dse-st7"/></g><g transform="translate(0 -22.863)"><path class="dse-st1" d="M0 424.79h49.467v36.392H0z"/><text y="448.39" class="dse-st2">owns</text></g><g transform="translate(64.755 -22.863)"><path class="dse-st1" d="M0 424.057h73.839v37.125H0z"/><text y="448.02" class="dse-st2">book on</text></g></g><g transform="translate(24.986 -87.072)"><g transform="translate(12.562)"><path d="M0 461.18h10.46" class="dse-st7"/></g><g transform="translate(0 -.047)"><path d="M0 349.18v101.44c0 5.88 2.32 10.56 5.13 10.56h7.53L0 349.18Z" class="dse-st8"/><path d="M0 349.18v101.44c0 5.88 2.32 10.56 5.13 10.56h7.53" class="dse-st7"/></g></g><g transform="translate(222.176 -87.882)"><g transform="translate(12.562)"><path d="M0 461.18h10.46" class="dse-st7"/></g><g transform="translate(0 -.047)"><path d="M0 349.18v101.44c0 5.88 2.32 10.56 5.13 10.56h7.53L0 349.18Z" class="dse-st8"/><path d="M0 349.18v101.44c0 5.88 2.32 10.56 5.13 10.56h7.53" class="dse-st7"/></g></g><g transform="translate(408.116 -86.442)"><g transform="translate(12.562)"><path d="M0 461.18h10.46" class="dse-st7"/></g><g transform="translate(0 -.047)"><path d="M0 349.18v101.44c0 5.88 2.32 10.56 5.13 10.56h7.53L0 349.18Z" class="dse-st8"/><path d="M0 349.18v101.44c0 5.88 2.32 10.56 5.13 10.56h7.53" class="dse-st7"/></g></g></g></g></svg>
 </div>
 
@@ -2454,6 +2452,7 @@ A Proof by Peirce&#x2019;s Rules
 <section animate-in="fade-in" animate-in-duration="4s" animate-in-delay="1.5s">
 
 <div style="width:80%; height:80%;">
+<!-- convert to amp-img -->
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 745.055 429.902" xml:space="preserve" color-interpolation-filters="sRGB" style="fill:none;fill-rule:evenodd;font-size:12px;overflow:visible;stroke-linecap:square;stroke-miterlimit:3"><style>.ppr-st1,.ppr-st2,.ppr-st3{fill:#cecece;stroke:#000;stroke-linecap:butt;stroke-width:1.15763}.ppr-st2,.ppr-st3{fill:#fff}.ppr-st3{fill:none;stroke:none;stroke-width:.75}.ppr-st4{fill:#000;font-family:NotoSans;font-size:1.5em}.ppr-st5{stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.15763}.ppr-st6{fill:none}.ppr-st7,.ppr-st8{stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.54351}.ppr-st8{fill:none;stroke-width:1.15763}</style><g transform="translate(1.158 -204.678)"><ellipse cx="134.438" cy="365.777" rx="134.438" ry="64.125" class="ppr-st1"/></g><g transform="translate(10.623 -213.489)"><g transform="translate(82.123)"><ellipse cx="39.375" cy="406.569" rx="39.375" ry="23.333" class="ppr-st2"/></g><g transform="translate(0 -49.49)"><path class="ppr-st3" d="M0 393.902h62.823v36H0z"/><text x="4.68" y="417.3" class="ppr-st4">farmer</text></g><g transform="translate(99.653 -49.91)"><path class="ppr-st3" d="M0 395.027h47.899v34.875H0z"/><text y="417.86" class="ppr-st4">owns</text></g><g transform="translate(187.323 -49.49)"><path class="ppr-st3" d="M0 393.902h66.711v36H0z"/><text y="417.3" class="ppr-st4">donkey</text></g><g transform="translate(98.041 -4.314)"><path class="ppr-st3" d="M0 392.877h51.123v37.025H0z"/><text y="416.79" class="ppr-st4">beats</text></g><g transform="translate(153.099 -66.694)"><path d="M0 429.9h23" class="ppr-st5"/></g><g transform="translate(153.408 -22.428)"><path d="M0 429.9h10.53c2.67 0 4.83-3.26 4.83-7.29v-37.2L0 429.9Z" class="ppr-st6"/><path d="M0 429.9h10.53c2.67 0 4.83-3.26 4.83-7.29v-37.2" class="ppr-st5"/></g><g transform="translate(64.483 -66.694)"><path d="M0 429.9h23" class="ppr-st5"/></g><g transform="translate(73.513 -20.349)"><path d="M0 383.33v38.93c0 4.22 2.16 7.64 4.82 7.64h9.57L0 383.33Z" class="ppr-st6"/><path d="M0 383.33v38.93c0 4.22 2.16 7.64 4.82 7.64h9.57" class="ppr-st5"/></g></g><g transform="translate(33.668 -339.75)"><g transform="translate(5.788 -53.162)"><path class="ppr-st3" d="M0 393.902h57.931v36H0z"/><text x="3.75" y="417.3" class="ppr-st4">Pedro</text></g><g><path class="ppr-st3" d="M0 393.902h69.508v36H0z"/><text x="5.68" y="417.3" class="ppr-st4">farmer</text></g><g transform="rotate(90 47.231 417.425)"><path d="M0 429.9h31.06" class="ppr-st7"/></g><g transform="translate(36.256 -26.195)"><g transform="translate(115.148)"><path class="ppr-st3" d="M0 393.902h69.508v36H0z"/><text y="417.3" class="ppr-st4">donkey</text></g><g transform="translate(33.905)"><path class="ppr-st3" d="M0 393.902h47.899v36H0z"/><text x="1.56" y="417.3" class="ppr-st4">owns</text></g><g transform="rotate(180 15.358 420.902)"><path d="M0 429.9h30.72" class="ppr-st7"/></g><g transform="translate(83.048 -18)"><path d="M0 429.9h23.46" class="ppr-st7"/></g></g></g><g transform="translate(377.47 -204.918)"><ellipse cx="135.562" cy="366.339" rx="135.562" ry="63.563" class="ppr-st1"/></g><g transform="translate(470.859 -213.729)"><ellipse cx="39.375" cy="406.569" rx="39.375" ry="23.333" class="ppr-st2"/></g><g transform="translate(388.736 -263.219)"><path class="ppr-st3" d="M0 393.902h62.823v36H0z"/><text x="4.68" y="417.3" class="ppr-st4">farmer</text></g><g transform="translate(488.39 -263.638)"><path class="ppr-st3" d="M0 395.027h47.899v34.875H0z"/><text y="417.86" class="ppr-st4">owns</text></g><g transform="translate(576.06 -263.219)"><path class="ppr-st3" d="M0 393.902h66.711v36H0z"/><text y="417.3" class="ppr-st4">donkey</text></g><g transform="translate(486.777 -218.043)"><path class="ppr-st3" d="M0 392.877h51.123v37.025H0z"/><text y="416.79" class="ppr-st4">beats</text></g><g transform="translate(541.835 -280.423)"><path d="M0 429.9h23" class="ppr-st5"/></g><g transform="translate(542.144 -236.157)"><path d="M0 429.9h10.53c2.67 0 4.83-10.86 4.83-24.24V281.94L0 429.9Z" class="ppr-st6"/><path d="M0 429.9h10.53c2.67 0 4.83-10.86 4.83-24.24V281.94" class="ppr-st5"/></g><g transform="translate(453.22 -280.423)"><path d="M0 429.9h23" class="ppr-st5"/></g><g transform="translate(461.658 -234.078)"><path d="M0 279.51v125.72c0 13.62 2.25 24.67 5.02 24.67h9.96L0 279.51Z" class="ppr-st6"/><path d="M0 279.51v125.72c0 13.62 2.25 24.67 5.02 24.67h9.96" class="ppr-st5"/></g><g transform="translate(399.569 -393.152)"><path class="ppr-st3" d="M0 393.902h57.931v36H0z"/><text x="3.75" y="417.3" class="ppr-st4">Pedro</text></g><g transform="translate(393.781 -339.99)"><path class="ppr-st3" d="M0 393.902h69.508v36H0z"/><text x="5.68" y="417.3" class="ppr-st4">farmer</text></g><g transform="rotate(90 414.116 444.32)"><path d="M0 429.9h31.06" class="ppr-st7"/></g><g transform="translate(565.435 -366.185)"><path class="ppr-st3" d="M0 393.902h69.508v36H0z"/><text y="417.3" class="ppr-st4">donkey</text></g><g transform="translate(486.442 -366.185)"><path class="ppr-st3" d="M0 393.902h47.899v36H0z"/><text x="1.56" y="417.3" class="ppr-st4">owns</text></g><g transform="rotate(180 230.376 237.809)"><path d="M0 429.9h30.72" class="ppr-st7"/></g><g transform="translate(540.086 -384.185)"><path d="M0 429.9h23.46" class="ppr-st7"/></g><g transform="translate(458.096 -384.191)"><path d="M0 429.9h23.46" class="ppr-st7"/></g><g transform="translate(91.439 -1.158)"><ellipse cx="69.328" cy="396.767" rx="69.328" ry="33.135" class="ppr-st1"/></g><g transform="translate(119.619 -9.969)"><ellipse cx="39.375" cy="406.569" rx="39.375" ry="23.333" class="ppr-st2"/></g><g transform="translate(135.537 -14.283)"><path class="ppr-st3" d="M0 392.877h51.123v37.025H0z"/><text y="416.79" class="ppr-st4">beats</text></g><g transform="translate(190.904 -32.397)"><path d="M0 429.9h10.53c2.67 0 4.83-4.84 4.83-10.81v-55.16L0 429.9Z" class="ppr-st6"/><path d="M0 429.9h10.53c2.67 0 4.83-4.84 4.83-10.81v-55.16" class="ppr-st5"/></g><g transform="translate(110.418 -30.318)"><path d="M0 362.42v56.41c0 6.11 2.25 11.07 5.02 11.07h9.96L0 362.42Z" class="ppr-st6"/><path d="M0 362.42v56.41c0 6.11 2.25 11.07 5.02 11.07h9.96" class="ppr-st5"/></g><g transform="translate(34.83 -108.392)"><path class="ppr-st3" d="M0 393.902h57.931v36H0z"/><text x="3.75" y="417.3" class="ppr-st4">Pedro</text></g><g transform="translate(29.041 -55.23)"><path class="ppr-st3" d="M0 393.902h69.508v36H0z"/><text x="5.68" y="417.3" class="ppr-st4">farmer</text></g><g transform="rotate(90 89.366 404.33)"><path d="M0 429.9h31.06" class="ppr-st7"/></g><g transform="translate(225.445 -81.425)"><path class="ppr-st3" d="M0 393.902h69.508v36H0z"/><text y="417.3" class="ppr-st4">donkey</text></g><g transform="translate(135.202 -81.425)"><path class="ppr-st3" d="M0 393.902h47.899v36H0z"/><text x="1.56" y="417.3" class="ppr-st4">owns</text></g><g transform="rotate(-179.918 54.722 380.431)"><path d="M0 429.9h45.36" class="ppr-st7"/></g><g transform="rotate(-.109 -51864.263 -98729.123)"><path d="M0 429.9h33.94" class="ppr-st7"/></g><g transform="translate(106.856 -98.869)"><path d="M0 429.9h23.46" class="ppr-st7"/></g><g transform="translate(486.083 -13.023)"><path class="ppr-st3" d="M0 392.877h51.123v37.025H0z"/><text y="416.79" class="ppr-st4">beats</text></g><g transform="translate(541.45 -31.137)"><path d="M0 429.9h10.53c2.67 0 4.83-2.25 4.83-5.02v-25.64L0 429.9Z" class="ppr-st6"/><path d="M0 429.9h10.53c2.67 0 4.83-2.25 4.83-5.02v-25.64" class="ppr-st5"/></g><g transform="translate(460.963 -29.058)"><path d="M0 397.16v27.37c0 2.97 2.25 5.37 5.02 5.37h9.96L0 397.16Z" class="ppr-st6"/><path d="M0 397.16v27.37c0 2.97 2.25 5.37 5.02 5.37h9.96" class="ppr-st5"/></g><g transform="translate(385.375 -71.989)"><path class="ppr-st3" d="M0 393.902h57.931v36H0z"/><text x="3.75" y="417.3" class="ppr-st4">Pedro</text></g><g transform="translate(379.587 -18.827)"><path class="ppr-st3" d="M0 393.902h69.508v36H0z"/><text x="5.68" y="417.3" class="ppr-st4">farmer</text></g><g transform="rotate(90 246.438 597.805)"><path d="M0 429.9h31.06" class="ppr-st7"/></g><g transform="translate(575.991 -45.023)"><path class="ppr-st3" d="M0 393.902h69.508v36H0z"/><text y="417.3" class="ppr-st4">donkey</text></g><g transform="translate(485.748 -45.023)"><path class="ppr-st3" d="M0 393.902h47.899v36H0z"/><text x="1.56" y="417.3" class="ppr-st4">owns</text></g><g transform="rotate(-179.918 230.008 398.507)"><path d="M0 429.9h45.36" class="ppr-st7"/></g><g transform="rotate(-.109 -32584.21 -282682.626)"><path d="M0 429.9h33.94" class="ppr-st7"/></g><g transform="translate(457.402 -62.466)"><path d="M0 429.9h23.46" class="ppr-st7"/></g><g transform="translate(297.204 -319.097)"><path class="ppr-st3" d="M0 393.902h61.617v36H0z"/><text y="417.3" class="ppr-st4">Iterate</text></g><g transform="translate(297.204 -288.104)"><path class="ppr-st3" d="M0 395.027h54.615v34.875H0z"/><text y="417.86" class="ppr-st4">Insert</text></g><g transform="translate(297.204 -313.503)"><path d="M0 417.4h64.09v-6.1l9.38 9.38-9.26 9.22v-4.59H0v-7.91Z" class="ppr-st8"/></g><g transform="translate(281.711 -35.771)"><path d="M0 417.36h80.66v-6.06l11.81 9.38-11.66 9.22v-4.59H0v-7.95Z" class="ppr-st8"/></g><g transform="translate(281.252 -42.104)"><path class="ppr-st3" d="M0 392.777h82.497v37.125H0z"/><text y="416.74" class="ppr-st4">Erase DN</text></g><g transform="translate(648.125 -314.479)"><path d="M0 417.36h84.05v-6.06l12.3 9.38-12.09 9.22v-4.63H0v-7.91Z" class="ppr-st8"/></g><g transform="translate(648.555 -319.812)"><path class="ppr-st3" d="M0 393.902h83.451v36H0z"/><text y="417.3" class="ppr-st4">Deiterate</text></g></svg>
 
 </div>
