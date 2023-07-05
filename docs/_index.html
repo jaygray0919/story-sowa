@@ -3,6 +3,7 @@ use fold level 4 to see pages
 
 UPDATE HTML
   too difficult to reverse engineer into EWB
+
 Remove complex pages
 
 amp-google-document-embed
@@ -40,6 +41,70 @@ Sowa 23-06-20
 <style amp-custom>
 
 :root {
+  --on-EBC05B:#EBC05B;
+  --on-28EA9A:#28EA9A;
+  --on-7BCE6B:#7BCE6B;
+  --on-E69588:#E69588;
+  --on-00C7B8:#00C7B8;
+  --on-4AA4CD:#4AA4CD;
+  --on-12FA4F:#12FA4F;
+  --on-F2AC0D:#F2AC0D;
+  --on-0CFA2E:#0CFA2E;
+  --on-DB8A61:#DB8A61;
+  --on-978A61:#978A61;
+  --on-5C8F93:#5C8F93;
+  --on-17A2AF:#17A2AF;
+  --on-D88B42:#D88B42;
+  --on-0AA1F7:#0AA1F7;
+  --on-83B11A:#83B11A;
+  --on-23C82C:#23C82C;
+  --on-F9794E:#F9794E;
+  --on-B47ECC:#B47ECC;
+  --on-D877DC:#D877DC;
+  --on-F3679E:#F3679E;
+  --on-4DAC3F:#4DAC3F;
+  --on-977663:#977663;
+  --on-BC6E91:#BC6E91;
+  --on-58789F:#58789F;
+  --on-FF2EF6:#FF2EF6;
+  --on-8872CD:#8872CD;
+  --on-429329:#429329;
+  --on-F6394B:#F6394B;
+  --on-6D71F4:#6D71F4;
+  --on-5C8323:#5C8323;
+  --on-318456:#318456;
+  --on-CB41D2:#CB41D2;
+  --on-DA4A1E:#DA4A1E;
+  --on-EE01B2:#EE01B2;
+  --on-FA0B20:#FA0B20;
+  --on-7363FF:#7363FF;
+  --on-81633A:#81633A;
+  --on-BA47CF:#BA47CF;
+  --on-D72B86:#D72B86;
+  --on-3167D0:#3167D0;
+  --on-2A68A8:#2A68A8;
+  --on-CB00E2:#CB00E2;
+  --on-984897:#984897;
+  --on-C506A5:#C506A5;
+  --on-0662C9:#0662C9;
+  --on-0345F3:#0345F3;
+  --on-27478A:#27478A;
+  --on-A10F0C:#A10F0C;
+  --on-4932CC:#4932CC;
+  --on-1B3CD8:#1B3CD8;
+  --on-69365E:#69365E;
+  --on-055226:#055226;
+  --on-08446A:#08446A;
+  --on-4A1ADD:#4A1ADD;
+  --on-4E4010:#4E4010;
+  --on-1B4906:#1B4906;
+  --on-341ABD:#341ABD;
+  --on-652A16:#652A16;
+  --on-0D0CBF:#0D0CBF;
+  --on-4B1D15:#4B1D15;
+  --on-190478:#190478;
+
+/* legacy */
   --on-ffffff:#ffffff;
   --on-595775:#595775;
   --on-cccccc:#cccccc;
@@ -47,7 +112,7 @@ Sowa 23-06-20
   --on-440044:#440044;
   --on-6c757d:#6c757d;
 
-/* inject UPDATE */
+/* spacers, vertical */
   --space-unit-v: 1rem;
   --space-xxxxs:  calc(0.125 * var(--space-unit-v)); 
   --space-xxxs:   calc(0.250 * var(--space-unit-v));
@@ -89,9 +154,6 @@ Sowa 23-06-20
 .w-sp-1 {
   word-spacing: 0.15rem;
 }
-i {
-  padding-right: 0.15rem;
-}
 
 /*****************
  *  Font: TrueType
@@ -123,9 +185,9 @@ i {
 @font-face{font-family:Poppins-BoldItalic-700;font-style:italic;font-weight:700;src:url("https://s3.amazonaws.com/benetta.net/fonts/poppins/Poppins-BoldItalic.ttf") format("truetype");font-display:swap;}
 
 
-/*************
- *  cover page
- *  inject UPDATE
+/************
+ * cover page
+ * inject UPDATE
  */
 
 h1 {
@@ -172,33 +234,13 @@ h2, h3 {
   border: none;
 }
 
-p {
-  display: inline-block;
-  border: none;
-}
-
-dt {
-  margin-top: 0.2em;
-  margin-bottom: 0.2em;
-}
-
-dd {
-  text-indent: -1.8em;
-  padding-left: 1.8em;
-}
-
-dd:last-of-type {
-  margin-bottom: 1em;
-}
-
-section {
-  padding-left: 1rem;
-}
-
 i {
   font-size: 0.95em;
+  padding-right: 0.15rem;
 }
 
+
+/* remove color; assign color element on HTML element */
 blockquote {
   border-left: 10px solid var(--on-cccccc);
   margin:  1.50rem 10px;
@@ -215,9 +257,39 @@ blockquote:before {
   vertical-align: -0.4rem;
 }
 
-/**********************
- *  Attachment DL-DT-DD
+/*****************
+ * Attachment Text
  */
+
+section {
+  padding-left: 1rem;
+}
+
+p {
+  display: inline-block;
+  border: none;
+}
+
+ul {
+  display: block;
+  margin: 0 auto;
+  max-width: 1160px;
+  padding: 30px;
+}
+
+dt {
+  margin-top: 0.2em;
+  margin-bottom: 0.2em;
+}
+
+dd {
+  text-indent: -1.8em;
+  padding-left: 1.8em;
+}
+
+dd:last-of-type {
+  margin-bottom: 1em;
+}
 
 .chartlegend span {
   display: inline-block;
@@ -241,73 +313,73 @@ blockquote:before {
   margin-right: 1rem;
 }
 
-.c-11{background: rgb(12, 250, 46);}
-.c-12{background: rgb(8, 68, 106);}
-.c-13{background: rgb(216, 139, 66);}
-.c-14{background: rgb(101, 42, 22);}
-.c-15{background: rgb(92, 143, 147);}
-.c-16{background: rgb(52, 26, 189);}
-.c-17{background: rgb(249, 121, 78);}
-.c-18{background: rgb(23, 162, 175);}
-.c-19{background: rgb(238, 1, 178);}
-.c-20{background: rgb(78, 64, 16);}
-.c-21{background: rgb(123, 206, 107);}
-.c-22{background: rgb(115, 99, 255);}
-.c-23{background: rgb(49, 103, 208);}
-.c-24{background: rgb(203, 0, 226);}
-.c-25{background: rgb(246, 57, 75);}
-.c-26{background: rgb(74, 164, 205);}
-.c-27{background: rgb(242, 172, 13);}
-.c-28{background: rgb(5, 82, 38);}
-.c-29{background: rgb(216, 119, 220);}
-.c-30{background: rgb(3, 69, 243);}
-.c-31{background: rgb(197, 6, 165);}
-.c-32{background: rgb(39, 71, 138);}
-.c-33{background: rgb(18, 250, 79);}
-.c-34{background: rgb(77, 172, 63);}
-.c-35{background: rgb(73, 50, 204);}
-.c-36{background: rgb(215, 43, 134);}
-.c-37{background: rgb(0, 199, 184);}
-.c-38{background: rgb(92, 131, 35);}
-.c-39{background: rgb(255, 46, 246);}
-.c-40{background: rgb(35, 200, 44);}
-.c-41{background: rgb(203, 65, 210);}
-.c-42{background: rgb(25, 4, 120);}
-.c-43{background: rgb(230, 149, 136);}
-.c-44{background: rgb(131, 177, 26);}
-.c-45{background: rgb(74, 66, 221);}
-.c-46{background: rgb(218, 74, 30);}
-.c-47{background: rgb(186, 71, 207);}
-.c-48{background: rgb(6, 98, 201);}
-.c-49{background: rgb(250, 11, 32);}
-.c-50{background: rgb(75, 29, 21);}
-.c-51{background: rgb(180, 126, 204);}
-.c-52{background: rgb(235, 192, 91);}
-.c-53{background: rgb(105, 54, 94);}
-.c-54{background: rgb(161, 15, 12);}
-.c-55{background: rgb(109, 113, 244);}
-.c-56{background: rgb(151, 138, 97);}
-.c-57{background: rgb(128, 99, 58);}
-.c-58{background: rgb(27, 73, 6);}
-.c-59{background: rgb(188, 110, 145);}
-.c-60{background: rgb(88, 120, 159);}
-.c-61{background: rgb(219, 138, 97);}
-.c-62{background: rgb(136, 114, 205);}
-.c-63{background: rgb(27, 60, 216);}
-.c-64{background: rgb(151, 118, 99);}
-.c-65{background: rgb(42, 104, 168);}
-.c-66{background: rgb(66, 147, 41);}
-.c-67{background: rgb(40, 234, 154);}
-.c-68{background: rgb(13, 12, 191);}
-.c-69{background: rgb(246, 103, 158);}
-.c-70{background: rgb(152, 72, 151);}
-.c-71{background: rgb(10, 161, 247);}
+.c-11{background-color: var(--on-0CFA2E);}
+.c-12{background-color: var(--on-08446A);}
+.c-13{background-color: var(--on-D88B42);}
+.c-14{background-color: var(--on-652A16);}
+.c-15{background-color: var(--on-5C8F93);}
+.c-16{background-color: var(--on-341ABD);}
+.c-17{background-color: var(--on-F9794E);}
+.c-18{background-color: var(--on-17A2AF);}
+.c-19{background-color: var(--on-EE01B2);}
+.c-20{background-color: var(--on-4E4010);}
+.c-21{background-color: var(--on-7BCE6B);}
+.c-22{background-color: var(--on-7363FF);}
+.c-23{background-color: var(--on-3167D0);}
+.c-24{background-color: var(--on-CB00E2);}
+.c-25{background-color: var(--on-F6394B);}
+.c-26{background-color: var(--on-4AA4CD);}
+.c-27{background-color: var(--on-F2AC0D);}
+.c-28{background-color: var(--on-055226);}
+.c-29{background-color: var(--on-D877DC);}
+.c-30{background-color: var(--on-0345F3);}
+.c-31{background-color: var(--on-C506A5);}
+.c-32{background-color: var(--on-27478A);}
+.c-33{background-color: var(--on-12FA4F);}
+.c-34{background-color: var(--on-4DAC3F);}
+.c-35{background-color: var(--on-4932CC);}
+.c-36{background-color: var(--on-D72B86);}
+.c-37{background-color: var(--on-00C7B8);}
+.c-38{background-color: var(--on-5C8323);}
+.c-39{background-color: var(--on-FF2EF6);}
+.c-40{background-color: var(--on-23C82C);}
+.c-41{background-color: var(--on-CB41D2);}
+.c-42{background-color: var(--on-190478);}
+.c-43{background-color: var(--on-E69588);}
+.c-44{background-color: var(--on-83B11A);}
+.c-45{background-color: var(--on-4A1ADD);}
+.c-46{background-color: var(--on-DA4A1E);}
+.c-47{background-color: var(--on-BA47CF);}
+.c-48{background-color: var(--on-0662C9);}
+.c-49{background-color: var(--on-FA0B20);}
+.c-50{background-color: var(--on-4B1D15);}
+.c-51{background-color: var(--on-B47ECC);}
+.c-52{background-color: var(--on-EBC05B);}
+.c-53{background-color: var(--on-69365E);}
+.c-54{background-color: var(--on-A10F0C);}
+.c-55{background-color: var(--on-6D71F4);}
+.c-56{background-color: var(--on-978A61);}
+.c-57{background-color: var(--on-81633A);}
+.c-58{background-color: var(--on-1B4906);}
+.c-59{background-color: var(--on-BC6E91);}
+.c-60{background-color: var(--on-58789F);}
+.c-61{background-color: var(--on-DB8A61);}
+.c-62{background-color: var(--on-8872CD);}
+.c-63{background-color: var(--on-1B3CD8);}
+.c-64{background-color: var(--on-977663);}
+.c-65{background-color: var(--on-2A68A8);}
+.c-66{background-color: var(--on-429329);}
+.c-67{background-color: var(--on-28EA9A);}
+.c-68{background-color: var(--on-0D0CBF);}
+.c-69{background-color: var(--on-F3679E);}
+.c-70{background-color: var(--on-984897);}
+.c-71{background-color: var(--on-0AA1F7);}
+
 
 /************************
  * from Machine Reasoning
- *   from sequence 10 - 58
- *   E:_rosetta-unified-data-table+color.xlsx
- *   E:_color-palette__2.xlsx
+ * Ontology and Reasoning
+ * update with new color technique after building the Glossary
  */
 
 .c-c0334d{background-color: #c0334d}
@@ -365,6 +437,7 @@ blockquote:before {
   position: relative;
 }
 
+/* update with new color technique */
 .uline::before {
   position: absolute;
   content: "";
@@ -382,13 +455,18 @@ blockquote:before {
   transition: 0.5s;
 }
 
+/* assign color for dark background and light background; update to new color technique */
+.uline-light {}
+.uline-dark {}
+
 .uline:hover::before {
   width: 70%;
   background: #1F64FF;
 }
 
-/*********************
- *  sowa grid original
+
+/********************
+ * sowa grid original
  */
 
 .parent-sowa {
@@ -486,7 +564,7 @@ blockquote:before {
 
 .Poppins-Bold-700{font-family:Poppins-Bold-700, sans-serif;font-style:normal;font-weight:700;}
 
-
+/* Font Size */
 .fs-08 {
   font-size: 0.8rem;
 }
@@ -657,6 +735,8 @@ blockquote:before {
 .item-b-212{grid-column:col 5 / span 4; grid-row:row 2;}
 .item-b-213{grid-column:col 9 / span 4; grid-row:row 2;}
 
+/* used for Person Cards */
+
 table {
 margin-left: 1em;
 margin-top: 2em;
@@ -680,6 +760,64 @@ th {
 td::before {
   display: none;
 }
+
+.card {
+  box-shadow: 0 0px 1px rgba(0, 0, 0, 0.1), 0 2px 2px rgba(0, 0, 0, 0.1);
+  background: #fff;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+}
+.card .card-body {
+  display: flex;
+  flex-flow: row wrap;
+  padding: 30px;
+}
+.card header {
+  flex: 100%;
+}
+
+.card .featured-image {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  overflow: hidden;
+  width: 100%;
+  /* height: 300px; */
+}
+
+@media only screen and (min-width: 768px) {
+  .card {
+    flex-direction: row;
+    max-height: 279px;
+  }
+  .card h3 {
+    font-size: calc(100% + 1vw);
+  }
+  .card .featured-image {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 0;
+    max-width: 390px;
+    max-height: 279px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .card h3 {
+    font-size: 32px;
+  }
+}
+
+/* use new technique to assign color; xcheck H3 */
+h3 {
+  color: #222;
+  margin: -0.8em 0 0 0;
+}
+
+
+.c-1f64ff{color:#1f64ff;}
 
 </style>
 </head>
@@ -782,39 +920,76 @@ Ontomatica shows how to translate Sowa&#x2019;s human&#x2012;readable graphs int
 
 </amp-story-grid-layer>
 
-<amp-story-page-attachment layout="nodisplay" theme="dark" cta-image="https://s3.amazonaws.com/benetta.net/media/logo/ontomatica/ontomatica-symbol-w33-h36-color-202125-bgnd-white.svg" cta-text="More about Models" data-title="More about Models">
+<amp-story-page-attachment layout="nodisplay" cta-image="https://s3.amazonaws.com/benetta.net/media/logo/ontomatica/ontomatica-symbol-w33-h36-color-1F64FF-bgnd-white.svg" cta-text="More about Mental Models" data-title="More about Mental Models">
 
-<section class="p-s">
-<dl class="chartlegend">
+<section>
+<p class="NotoSerif-Regular-400 fs-12">
+Philip Johnson&#x2012;Laird argues human reasoning is based on the construction and evaluation of mental models of the world around us.
+</p>
 
-<div class="NotoSans-Regular-400 fs-16 lh-18 av">Idea #1</div>
+<ul>
+<li class="card">
+<a 
+  href="#" 
+  class="featured-image" 
+  style="background-image:url('./image/philip-johnson-laird-w512-h512.jpg')">
+</a>
+<article class="card-body">
+  <header>
+    <h3 class="NotoSans-Regular-400 lh-08">
+    <a href="https://en.wikipedia.org/wiki/Philip_Johnson-Laird" class="NotoSans-Regular-400 uline c-1f64ff">Philip Johnson&#x2012;Laird</a>
+    </h3>
+    <p class="NotoSerif-Regular-400 fs-12">
+    Philip Johnson&#x2012;Laird is an expert on human cognition and the psychology of language, thinking and reasoning. He is a developer of the mental model theory of reasoning. Johnson&#x2012;Laird has shown that people reason by constructing a set of mental models of possibilities, selecting commonalities, and choosing among them.
+    </p>
+  </header>
+</article>
+</li>
+</ul>
 
-<dt class="NotoSerif-Regular-400 fs-14 lh-14">Blue Diamonds</dt>
-<dd class="NotoSans-Regular-400 fs-12 lh-10"><span class="c-11 mr-s"></span>Bright amazing and wonderful</dd>
-<dd class="NotoSans-Regular-400 fs-12 lh-10"><span class="c-12 mr-s"></span>Dancing around the flames</dd>
-<dd class="NotoSans-Regular-400 fs-12 lh-10"><span class="c-13 mr-s"></span>Everybody knows bird is word</dd>
+<p class="NotoSerif-Regular-400 fs-12">
+We build models using information from our senses, but also assumptions and long&#x2010;term knowledge from memory as represented in this diagram:
+</p>
 
-<div class="NotoSans-Regular-400 fs-16 lh-18 av">Idea #2</div>
+<div style="display:block; margin-left:auto; margin-right:auto; width:80%; height:80%;">
+<amp-img
+  src="./image/mental-models-w936-h576.png"
+  layout="responsive"
+  width="936"
+  height="576"
+></amp-img>
+</div>
 
-<dt class="NotoSerif-Regular-400 fs-14 lh-14">Blue Diamonds</dt>
-<dd class="NotoSans-Regular-400 fs-12 lh-10"><span class="c-11 mr-s"></span>Bright amazing and wonderful</dd>
-<dd class="NotoSans-Regular-400 fs-12 lh-10"><span class="c-12 mr-s"></span>Dancing around the flames</dd>
-<dd class="NotoSans-Regular-400 fs-12 lh-10"><span class="c-13 mr-s"></span>Everybody knows bird is word</dd>
+<div class="sp-1"></div>
 
-<div class="NotoSans-Regular-400 fs-16 lh-18 av">Idea #3</div>
+<p class="NotoSerif-Regular-400 fs-12">
+Ontomatica&#x2019;s domain&#x2010;of&#x2010;interest is food and drugs.
+A data&#x2010;centric mental model for organizing foods might begin with a layout of a grocery story.
+</p>
 
-<dt class="NotoSerif-Regular-400 fs-14 lh-14">Blue Diamonds</dt>
-<dd class="NotoSans-Regular-400 fs-12 lh-10"><span class="c-11 mr-s"></span>Bright amazing and wonderful</dd>
-<dd class="NotoSans-Regular-400 fs-12 lh-10"><span class="c-12 mr-s"></span>Dancing around the flames</dd>
-<dd class="NotoSans-Regular-400 fs-12 lh-10"><span class="c-13 mr-s"></span>Everybody knows bird is word</dd>
 
-</dl>
+<div style="display:block; margin-left:auto; margin-right:auto; width:80%; height:80%;">
+<amp-img
+  src="./image/mental-models-data-centric-architecture-w946-h382.png"
+  layout="responsive"
+  width="946"
+  height="382"
+></amp-img>
+</div>
+
+<p class="NotoSerif-Regular-400 fs-12">
+An information model could start with a similar mental model and add data definitions by aisle (broad classes), shelves on an aisle (narrow classes), brands on a shelf, and then characteristic of individual items grouped by equivalence or similarity.
+</p>
+
+<div class="sp-2"></div>
+
 </section>
 </amp-story-page-attachment>
 
 </amp-story-page>
 
 <amp-story-page id="sowa-03" data-page-no="03" data-item-label="Logicians">
+
 <amp-story-grid-layer template="fill"><amp-img id="background-mottled-white" data-item-role="background" data-item-type="static" data-item-label="background-mottled-white" src="https://s3.amazonaws.com/benetta.net/media/background-svg/background-fractal-noise-w1650-h1500.svg" width="1650" height="1500" layout="responsive" animate-in="fade-in" animate-in-duration="2s"></amp-img></amp-story-grid-layer>
 
 <amp-story-grid-layer template="vertical" aspect-ratio="5:3">
@@ -929,42 +1104,151 @@ Tim Berners&#x2012;Lee
 </div>
 </amp-story-grid-layer>
 
-<amp-story-page-attachment layout="nodisplay" theme="dark" cta-image="https://s3.amazonaws.com/benetta.net/media/logo/ontomatica/ontomatica-symbol-w33-h36-color-202125-bgnd-white.svg" cta-text="More about Logicians" data-title="Logicians Featured in the Presentation">
+<amp-story-page-attachment layout="nodisplay" cta-image="https://s3.amazonaws.com/benetta.net/media/logo/ontomatica/ontomatica-symbol-w33-h36-color-1F64FF-bgnd-white.svg" cta-text="More about Logicians" data-title="Logicians Featured in the Presentation">
 
-<section class="p-s">
-<dl class="chartlegend">
-<div class="NotoSans-Regular-400 fs-16 lh-18 av">Logicians</div>
+<section>
+<ul>
+<li class="card">
+<a 
+  href="#" 
+  class="featured-image" 
+  style="background-image:url('./image/aristotle-w359-h480.jpg')"
+></a>
+<article class="card-body">
+  <header>
+    <h3 class="NotoSans-Regular-400 lh-14">
+    <a href="https://en.wikipedia.org/wiki/Aristotle" class="NotoSans-Regular-400 uline c-1f64ff">Aristotle</a>
+    </h3>
+    <p class="NotoSerif-Regular-400 fs-09">
+    Aristotle was a Greek philosopher. His writings span the natural sciences, philosophy, linguistics, economics, politics, psychology and the arts. The Aristotelian tradition set the groundwork for the development of modern science.
+    With the <i>Prior Analytics</i>, Aristotle is credited with the earliest study of formal logic, and his conception of it was the dominant form of Western logic until 19th-century advances in mathematical logic.
+    </p>
+  </header>
+</article>
+</li>
+</ul>
 
-<dt class="NotoSerif-Regular-400 fs-14 lh-14">Aristotle</dt>
-<dd class="NotoSans-Regular-400 fs-12 lh-10"><span class="c-11 mr-s"></span>Bright amazing and wonderful</dd>
-<dd class="NotoSans-Regular-400 fs-12 lh-10"><span class="c-12 mr-s"></span>Dancing around the flames</dd>
-<dd class="NotoSans-Regular-400 fs-12 lh-10"><span class="c-13 mr-s"></span>Everybody knows bird is word</dd>
+<ul>
+<li class="card">
+<a 
+  href="#" 
+  class="featured-image" 
+  style="background-image:url('./image/leonhard-euler-w4672-h6040.jpg')">
+</a>
+<article class="card-body">
+  <header>
+    <h3 class="NotoSans-Regular-400 lh-08">
+    <a href="https://en.wikipedia.org/wiki/Leonhard_Euler" class="NotoSans-Regular-400 uline c-1f64ff">Leonard Euler</a>
+    </h3>
+    <p class="NotoSerif-Regular-400 fs-09">
+    Leonhard Euler was a Swiss mathematician, physicist, astronomer, geographer, logician and engineer who founded the studies of graph theory and topology.
+    In 1735, Euler presented a solution to the problem known as the Seven Bridges of Königsberg. The problem is to decide whether it is possible to follow a path that crosses each bridge exactly once and returns to the starting point. It is not possible: there is no path in a finite graph that visits every edge exactly once. This solution is considered to be the first theorem of graph theory.
+    </p>
+  </header>
+</article>
+</li>
+</ul>
 
-<dt class="NotoSerif-Regular-400 fs-14 lh-14">Euler</dt>
-<dd class="NotoSans-Regular-400 fs-12 lh-10"><span class="c-11 mr-s"></span>Intro text</dd>
-<dd class="NotoSans-Regular-400 fs-12 lh-10"><span class="c-12 mr-s"></span>Bridges</dd>
-<dd class="NotoSans-Regular-400 fs-12 lh-10"><span class="c-13 mr-s"></span>Humor about Bridges</dd>
+<ul>
+<li class="card">
+<a 
+  href="#" 
+  class="featured-image" 
+  style="background-image:url('./image/charles-sanders-peirce-919-980.jpg')">
+</a>
+<article class="card-body">
+  <header>
+    <h3 class="NotoSans-Regular-400 lh-08">
+    <a href="https://en.wikipedia.org/wiki/Charles_Sanders_Peirce" class="NotoSans-Regular-400 uline c-1f64ff">Charles Sanders Peirce</a>
+    </h3>
+    <p class="NotoSerif-Regular-400 fs-09">
+    Charles Sanders Peirce was an American philosopher, logician, mathematician and scientist. As early as 1886, he saw that logical operations could be carried out by electrical switching circuits - the basis of digital computers.
+    During the 1890s he devised existential graphs, a diagrammatic notation for the predicate calculus. John F. Sowa's conceptual graphs and Sun-Joo Shin's diagrammatic reasoning are based on existential graphs. In computer science, the relational model for databases was developed with Peircean ideas by Edgar F. Codd.
+    </p>
+  </header>
+</article>
+</li>
+</ul>
 
-<dt class="NotoSerif-Regular-400 fs-14 lh-14">Peirce</dt>
-<dd class="NotoSans-Regular-400 fs-12 lh-10"><span class="c-11 mr-s"></span>Bright amazing and wonderful</dd>
-<dd class="NotoSans-Regular-400 fs-12 lh-10"><span class="c-12 mr-s"></span>Dancing around the flames</dd>
-<dd class="NotoSans-Regular-400 fs-12 lh-10"><span class="c-13 mr-s"></span>Everybody knows bird is word</dd>
+<ul>
+<li class="card">
+<a 
+  href="#" 
+  class="featured-image" 
+  style="background-image:url('./image/alonzo-church-w235-h312.jpg')">
+</a>
+<article class="card-body">
+  <header>
+    <h3 class="NotoSans-Regular-400 lh-08">
+    <a href="https://en.wikipedia.org/wiki/Alonzo_Church" class="NotoSans-Regular-400 uline c-1f64ff">Alonzo Church</a>
+    </h3>
+    <p class="NotoSerif-Regular-400 fs-09">
+    Alonzo Church was an American mathematician, computer scientist, logician, and philosopher who made major contributions to mathematical logic and the foundations of theoretical computer science. Alongside his doctoral student Alan Turing, Church is considered one of the founders of computer science.
+    He invented the lambda calculus which influenced the design of Lisp and functional programming languages.
+    </p>
+  </header>
+</article>
+</li>
+</ul>
 
-<dt class="NotoSerif-Regular-400 fs-14 lh-14">Church</dt>
-<dd class="NotoSans-Regular-400 fs-12 lh-10"><span class="c-11 mr-s"></span>Bright amazing and wonderful</dd>
-<dd class="NotoSans-Regular-400 fs-12 lh-10"><span class="c-12 mr-s"></span>Dancing around the flames</dd>
-<dd class="NotoSans-Regular-400 fs-12 lh-10"><span class="c-13 mr-s"></span>Everybody knows bird is word</dd>
+<ul>
+<li class="card">
+<a 
+  href="#" 
+  class="featured-image" 
+  style="background-image:url('./image/john-f-sowa-w270-h262.jpg')">
+</a>
+<article class="card-body">
+  <header>
+    <h3 class="NotoSans-Regular-400 lh-08">
+    <a href="https://en.wikipedia.org/wiki/John_F._Sowa" class="NotoSans-Regular-400 uline c-1f64ff">John F. Sowa</a>
+    </h3>
+    <p class="NotoSerif-Regular-400 fs-09">
+    John F. Sowa is an American computer scientist, an expert in artificial intelligence and database query linked to natural languages. His work combines ideas from numerous disciplines and eras such as Aristotle, Alfred North Whitehead and Islamic scholar Ibn Taymiyyah.
+    Sowa invented conceptual graphs, a graphic notation for logic and natural language, based on the structures in semantic networks and on the existential graphs of Charles S. Peirce. This presentation is based on Sowa presentations.
+    </p>
+  </header>
+</article>
+</li>
+</ul>
 
-<dt class="NotoSerif-Regular-400 fs-14 lh-14">John F Sowa</dt>
-<dd class="NotoSans-Regular-400 fs-12 lh-10"><span class="c-11 mr-s"></span>Bright amazing and wonderful</dd>
-<dd class="NotoSans-Regular-400 fs-12 lh-10"><span class="c-12 mr-s"></span>Dancing around the flames</dd>
-<dd class="NotoSans-Regular-400 fs-12 lh-10"><span class="c-13 mr-s"></span>Everybody knows bird is word</dd>
+<ul>
+<li class="card">
+<a 
+  href="#" 
+  class="featured-image" 
+  style="background-image:url('./image/tim-berners-lee-w570-h713.jpg')">
+</a>
+<article class="card-body">
+  <header>
+    <h3 class="NotoSans-Regular-400 lh-08">
+    <a href="https://en.wikipedia.org/wiki/Tim_Berners-Lee" class="NotoSans-Regular-400 uline c-1f64ff">Tim Berners&#x2012;Lee</a>
+    </h3>
+    <p class="NotoSerif-Regular-400 fs-09">
+    Tim Berners&#x2012;Lee is an English computer scientist who devised and implemented the first Web browser and Web server. In 1999 he defined <span class="NotoSans-Regular-400 fs-08">linked data</span> &#x2012; a formal description of concepts, terms, and relationships within a given knowledge domain.
+    To enable <span class="NotoSans-Regular-400 fs-08">linked data</span>, he proposes technologies such as:
+    <br>
+	<span class="NotoSans-Regular-400 fs-08">
+    Resource Description Framework (RDF), a method for describing information
+	</span>
+    <br>
+	<span class="NotoSans-Regular-400 fs-08">
+    N-Triples, a format for storing and transmitting data
+	</span>
+    <br>
+	<span class="NotoSans-Regular-400 fs-08">
+	SPARQL, an RDF query language
+	</span>
+    <br>
+	<span class="NotoSans-Regular-400 fs-08">
+	Web Ontology Language (OWL), a knowledge representation language
+	</span>
+    </p>
+  </header>
+</article>
+</li>
+</ul>
 
-<dt class="NotoSerif-Regular-400 fs-14 lh-14">Tim Berners&#x2012;Lee</dt>
-<dd class="NotoSans-Regular-400 fs-12 lh-10"><span class="c-11 mr-s"></span>Bright amazing and wonderful</dd>
-<dd class="NotoSans-Regular-400 fs-12 lh-10"><span class="c-12 mr-s"></span>Dancing around the flames</dd>
-<dd class="NotoSans-Regular-400 fs-12 lh-10"><span class="c-13 mr-s"></span>Everybody knows bird is word</dd>
-</dl>
 </section>
 </amp-story-page-attachment>
 
@@ -1125,21 +1409,16 @@ No animals were harmed making this presentation.</dd>
 
 </div></amp-story-grid-layer>
 
-<amp-story-page-attachment layout="nodisplay" theme="dark" cta-image="https://s3.amazonaws.com/benetta.net/media/logo/ontomatica/ontomatica-symbol-w33-h36-color-202125-bgnd-white.svg" cta-text="Philip Johnson&#x2012;Laird" data-title="">
+<amp-story-page-attachment layout="nodisplay" theme="dark" cta-image="https://s3.amazonaws.com/benetta.net/media/logo/ontomatica/ontomatica-symbol-w33-h36-color-202125-bgnd-white.svg" cta-text="Language and Ontology" data-title="Language, Ontology, and the Semantic Web">
 
-<section class="p-s">
-<dl class="chartlegend">
+<amp-google-document-embed
+	width="100"
+	height="300"
+	layout="responsive"
+	src="https://afdsi.com/__test-sowa/attach/sowa-language-ontology-semantic-web.pdf"
+></amp-google-document-embed>
 
-<div class="NotoSans-Regular-400 fs-16 lh-18 av">Philip Johnson&#x2012;Laird</div>
-<dt class="NotoSerif-Regular-400 fs-14 lh-14">Idea</dt>
-<dd class="NotoSans-Regular-400 fs-12 lh-10"><span class="c-11 mr-s"></span>1</dd>
-<dd class="NotoSans-Regular-400 fs-12 lh-10"><span class="c-12 mr-s"></span>2</dd>
-<dd class="NotoSans-Regular-400 fs-12 lh-10"><span class="c-13 mr-s"></span>3</dd>
-
-</dl>
-</section>
 </amp-story-page-attachment>
-
 
 </amp-story-page>
 
@@ -1205,44 +1484,15 @@ sowa-12-w2142-h1116.png
 </div>
 </section></div></amp-story-grid-layer>
 
-<amp-story-page-attachment layout="nodisplay" theme="dark" cta-image="https://s3.amazonaws.com/benetta.net/media/logo/ontomatica/ontomatica-symbol-w33-h36-color-202125-bgnd-white.svg" cta-text="Existential Graphs" data-title="Existential Graph Presentations">
-
-<p class="Poppins-MediumItalic-500 fs-18 stb-l">
-Sowa Existential Graphs
-</p>
+<amp-story-page-attachment layout="nodisplay" theme="dark" cta-image="https://s3.amazonaws.com/benetta.net/media/logo/ontomatica/ontomatica-symbol-w33-h36-color-202125-bgnd-white.svg" cta-text="Existential Graphs" data-title="Sowa Existential Graphs">
 
 <amp-google-document-embed
 	width="100"
-	height="30"
+	height="300"
 	layout="responsive"
 	src="https://afdsi.com/__test-sowa/attach/sowa-existential-graphs-20-01-10.pdf"
 ></amp-google-document-embed>
 
-<hr>
-
-<p class="Poppins-MediumItalic-500 fs-18 stb-l">
-Common Logic
-</p>
-<amp-google-document-embed
-	width="100"
-	height="30"
-	layout="responsive"
-	src="https://afdsi.com/__test-sowa/attach/common-logic-description.pdf"
-></amp-google-document-embed>
-
-<hr>
-
-<p class="Poppins-MediumItalic-500 fs-18 stb-l">
-Aristotle patterns of logic and ontology
-</p>
-<amp-google-document-embed
-	width="100"
-	height="30"
-	layout="responsive"
-	src="https://afdsi.com/__test-sowa/attach/aristotle-patterns-of-logic-and-ontology.pdf"
-></amp-google-document-embed>
-
-<div class="sp-6"></div>
 </amp-story-page-attachment>
 </amp-story-page>
 
@@ -1386,15 +1636,18 @@ If a cat is on a mat, then it is a happy pet:&#8195;
 <amp-story-page-attachment layout="nodisplay" theme="dark" cta-image="https://s3.amazonaws.com/benetta.net/media/logo/ontomatica/ontomatica-symbol-w33-h36-color-202125-bgnd-white.svg" cta-text="Peirce Citation" data-title="Peirce Citation">
 
 <section>
-<dl class="NotoSans-Regular-400 fs-14 chartlegend">
-<dt class="lh-14"></dt>
-<dd class="lh-12"><span class="c-11 mr-s"></span>
+<p class="NotoSans-Regular-400 fs-14">
 Peirce drew the six EGs in this slide and the next in MS 145, page 21.
-</dd>
-<dd class="lh-12"><span class="c-13 mr-s"></span>
-Attachment goes here
-</dd>
-</dl>
+</p>
+
+<amp-img
+	src="./image/charles-peirce-diagrams-w450-h303.jpg"
+	width="450"
+	height="303"
+	layout="responsive"
+></amp-img>
+
+<div class="sp-2"></div>
 </section>
 
 </amp-story-page-attachment>
@@ -1629,7 +1882,7 @@ Epistemology
 </dd>
 <dd class="fs-12 lh-12">
 <span class="c-13 mr-s"></span>Implication &#x2283; cannot be observed. &#x201C;Post hoc, ergo propter hoc&#x201D; is a classical fallacy.
-<sup><i class="NotoSans-Regular-400 fs-10">&#xa7;</i></sup>
+<sup><i class="Poppins-Bold-700 fs-10">&#xa7;</i></sup>
 </dd>
 <dd class="fs-12 lh-12">
 <span class="c-14 mr-s"></span>For disjunction &#x2228;, only one option at a time can be observed. The possibility of alternatives must be inferred by some method.
@@ -1921,20 +2174,31 @@ This subset of logic can be coded in RDF and stored in graph databases, as illus
 
 </amp-story-grid-layer>
 
-<amp-story-page-attachment layout="nodisplay" theme="dark" cta-image="https://s3.amazonaws.com/benetta.net/media/logo/ontomatica/ontomatica-symbol-w33-h36-color-202125-bgnd-white.svg" cta-text="More about Example" data-title="More about Example">
+<amp-story-page-attachment layout="nodisplay" theme="dark" cta-image="https://s3.amazonaws.com/benetta.net/media/logo/ontomatica/ontomatica-symbol-w33-h36-color-202125-bgnd-white.svg" cta-text="Stagirites &amp; Macedonians" data-title="Stagirites and Macedonians">
 
-<section>
-<dl class="NotoSans-Regular-400 fs-14 chartlegend">
-<dt class="lh-14"></dt>
-<dd class="lh-12"><span class="c-11 mr-s"></span>
-text
-</dd>
-<div class="sp-4"></div>
-<dd class="lh-12"><span class="c-13 mr-s"></span>
-text
-</dd>
-</dl>
-</section>
+<p class="NotoSans-Regular-400 fs-14 lh-18">
+A Stagirite
+</p>
+
+<amp-img
+	src="./image/stagirite-webster-w1034-h897.png"
+	width="1034"
+	height="897"
+	layout="responsive"
+></amp-img>
+
+<p class="NotoSans-Regular-400 fs-14 lh-18">
+A Macedonian conqueror of the world
+</p>
+
+<amp-img
+	src="./image/alexander-the-great-w803-h1074.jpg"
+	width="804"
+	height="1074"
+	layout="responsive"
+></amp-img>
+
+<div class="sp-2"></div>
 
 </amp-story-page-attachment>
 </amp-story-page>
@@ -1984,16 +2248,77 @@ RDF Visualization:<br>Directed Graph
 </section>
 </amp-story-grid-layer>
 
-<amp-story-page-attachment layout="nodisplay" theme="dark" cta-image="https://s3.amazonaws.com/benetta.net/media/logo/ontomatica/ontomatica-symbol-w33-h36-color-202125-bgnd-white.svg" cta-text="More about RDF" data-title="More about RDF">
+<amp-story-page-attachment layout="nodisplay" theme="dark" cta-image="https://s3.amazonaws.com/benetta.net/media/logo/ontomatica/ontomatica-symbol-w33-h36-color-202125-bgnd-white.svg" cta-text="More about RDF" data-title="Resource Description Framework (RDF)">
 
-<section class="p-s">
-<dl class="chartlegend">
-<div class="NotoSans-Regular-400 fs-16 lh-18 av">Abbervail Dream</div>
-<dt class="NotoSerif-Regular-400 fs-14 lh-14">Blue Diamonds</dt>
-<dd class="NotoSans-Regular-400 fs-12 lh-10"><span class="c-11 mr-s"></span>Bright amazing and wonderful</dd>
-<dd class="NotoSans-Regular-400 fs-12 lh-10"><span class="c-12 mr-s"></span>Dancing around the flames</dd>
-<dd class="NotoSans-Regular-400 fs-12 lh-10"><span class="c-13 mr-s"></span>Everybody knows bird is word</dd>
-</dl>
+<section>
+<p class="NotoSerif-Italic-400 fs-12">Human language enables data sharing among humans</p>
+<p class="NotoSerif-Italic-400 fs-12">RDF enables data sharing among computers</p>
+
+<amp-img
+  src="./image/rdf-data-interchange-w3125-h1563.webp"
+  layout="responsive"
+  width="3125"
+  height="1563"
+></amp-img>
+
+<p class="Poppins-Medium-500 fs-16">&#8195;Details</p>
+<br>
+<p class="NotoSerif-Italic-400 fs-14">&#8195;RDF Properties</p>
+
+<div style="display:block; margin-left:auto; margin-right:auto; width:80%; height:80%;">
+<amp-img
+  src="./image/schema-rdf-rdfs-properties-w625-h923.png"
+  layout="responsive"
+  width="625"
+  height="923"
+></amp-img>
+</div>
+
+<p class="NotoSerif-Italic-400 fs-14">RDF and OWL Classes</p>
+
+<div style="display:block; margin-left:auto; margin-right:auto; width:80%; height:80%;">
+<amp-img
+  src="./image/schema-rdfs-owl-classes-w693-h1067.png"
+  layout="responsive"
+  width="693"
+  height="1067"
+></amp-img>
+</div>
+
+<p class="NotoSerif-Italic-400 fs-14">OWL Properties (1)</p>
+
+<div style="display:block; margin-left:auto; margin-right:auto; width:80%; height:80%;">
+<amp-img
+  src="./image/schema-owl-properties-1-w577-h856.png"
+  layout="responsive"
+  width="577"
+  height="856"
+></amp-img>
+</div>
+
+<p class="NotoSerif-Italic-400 fs-14">OWL Properties (2)</p>
+
+<div style="display:block; margin-left:auto; margin-right:auto; width:80%; height:80%;">
+<amp-img
+  src="./image/schema-owl-properties-2-w597-h909.png"
+  layout="responsive"
+  width="597"
+  height="909"
+></amp-img>
+</div>
+
+<p class="NotoSerif-Italic-400 fs-14">Customizing a user&#x2019;s design from system properties and classes</p>
+
+<div style="display:block; margin-left:auto; margin-right:auto; width:80%; height:80%;">
+<amp-img
+  src="./image/schema-customized-w692-h706.png"
+  layout="responsive"
+  width="692"
+  height="706"
+></amp-img>
+</div>
+
+<div class="sp-2"></div>
 </section>
 
 </amp-story-page-attachment>
@@ -2265,7 +2590,7 @@ Therefore, EGs are a good canonical form for expressing the common meaning.
 
 </amp-story-grid-layer>
 
-<amp-story-page-attachment layout="nodisplay" theme="dark" cta-image="https://s3.amazonaws.com/benetta.net/media/logo/ontomatica/ontomatica-symbol-w33-h36-color-202125-bgnd-white.svg" cta-text="Citation" data-title="Citation">
+<amp-story-page-attachment layout="nodisplay" theme="dark" cta-image="https://s3.amazonaws.com/benetta.net/media/logo/ontomatica/ontomatica-symbol-w33-h36-color-202125-bgnd-white.svg" cta-text="Sowa Propositions" data-title="A language-independent meaning of a sentence">
 
 <amp-google-document-embed
 	width="100"
@@ -2321,7 +2646,7 @@ If something red that is not a ball is on something y, then y is a table that is
 
 <div class="sp-1"></div>
 <dt>
-EGIF has a one&#x2010;to&#x2010;one mapping to and from every EG&#x003A; &#xa7;
+EGIF has a one&#x2010;to&#x2010;one mapping to and from every EG&#x003A; <sup><i class="Poppins-Bold-700 fs-10">&#xa7;</i></sup>
 </dt>
 
 <dd class="NotoSans-Regular-400"><span class="c-11 mr-s"></span>
@@ -2502,7 +2827,7 @@ Issues of Mapping Language to Logic
 <dl class="NotoSans-Regular-400 fs-12 chartlegend">
 
 <dt>
-Hans Kamp observed that the features of predicate calculus do not have a direct mapping to and from natural languages.<sup><i class="NotoSans-Regular-400 fs-10">&#xa7;</i></sup></dt>
+Hans Kamp observed that the features of predicate calculus do not have a direct mapping to and from natural languages.<sup><i class="Poppins-Bold-700 fs-10">&#xa7;</i></sup></dt>
 
 <div class="sp-1"></div>
 
@@ -2568,7 +2893,7 @@ Both Kamp and Peirce represented names by monadic predicates.
 </section>
 </amp-story-grid-layer>
 
-<amp-story-page-attachment layout="nodisplay" theme="dark" cta-image="https://s3.amazonaws.com/benetta.net/media/logo/ontomatica/ontomatica-symbol-w33-h36-color-202125-bgnd-white.svg" cta-text="&#xa7; More information" data-title="">
+<amp-story-page-attachment layout="nodisplay" theme="dark" cta-image="https://s3.amazonaws.com/benetta.net/media/logo/ontomatica/ontomatica-symbol-w33-h36-color-202125-bgnd-white.svg" cta-text="&#xa7; More about Logic" data-title="">
 
 <section>
 <div class="NotoSerif-Italic-400 fs-14">
@@ -2596,10 +2921,10 @@ From Discourse to Logic
 <amp-story-grid-layer template="fill"><amp-img id="" data-item-role="background" data-item-type="static" data-item-label="background-mottled-white" src="https://s3.amazonaws.com/benetta.net/media/background-svg/background-fractal-noise-w1650-h1500.svg" width="1650" height="1500" layout="responsive"></amp-img></amp-story-grid-layer>
 
 <amp-story-grid-layer template="vertical" aspect-ratio="3:2">
-
 <div class="top">
+
 <div class="t-c" animate-in="fade-in" animate-in-duration="4s" animate-in-delay="0.5s">
-<h2 class="Poppins-Bold-700 fs-40 stb-l">Quantifiers in EG &amp; DRS <sup><i class="NotoSans-Regular-400 fs-10">&#xa7;</i></h2>
+<h2 class="Poppins-Bold-700 fs-40 stb-l">Quantifiers in EG &amp; DRS <sup><i class="NotoSans-Regular-400 fs-10">&#xa7;</i></sup></h2>
 </div>
 
 <section animate-in="fade-in" animate-in-duration="4s" animate-in-delay="1.5s">
@@ -2652,7 +2977,9 @@ In these examples, the same EGIF represents the EG and the DRS&#x003A;
 </div>
 </amp-story-grid-layer>
 
-<amp-story-page-outlink layout="nodisplay" theme="dark" cta-accent-element="text" cta-image="https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Wikipedia_Logo_1.0.png/240px-Wikipedia_Logo_1.0.png"><a href="https://en.wikipedia.org/wiki/Discourse_representation_theory">DRS</a></amp-story-page-outlink>
+<amp-story-page-outlink layout="nodisplay" theme="dark" cta-accent-element="text" cta-image="https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Wikipedia_Logo_1.0.png/240px-Wikipedia_Logo_1.0.png">
+<a href="https://en.wikipedia.org/wiki/Discourse_representation_theory">DRS</a>
+</amp-story-page-outlink>
 
 </amp-story-page>
 
@@ -2829,13 +3156,13 @@ But they can be adapted to many notations, including DRS, predicate calculus, va
 </section>
 </amp-story-grid-layer>
 
-<amp-story-page-attachment layout="nodisplay" theme="dark" cta-image="https://s3.amazonaws.com/benetta.net/media/logo/ontomatica/ontomatica-symbol-w33-h36-color-202125-bgnd-white.svg" cta-text="More information" data-title="More information">
+<amp-story-page-attachment layout="nodisplay" theme="dark" cta-image="https://s3.amazonaws.com/benetta.net/media/logo/ontomatica/ontomatica-symbol-w33-h36-color-202125-bgnd-white.svg" cta-text="Reasoning" data-title="Reasoning with Diagrams and Images">
 
 <amp-google-document-embed
 	width="100"
 	height="300"
 	layout="responsive"
-	src="https://afdsi.com/__test-sowa/attach/sowa-peirce-existential-graphs-2016.pdf"
+	src="https://afdsi.com/__test-sowa/attach/sowa-reasoning-with-diagrams-and-images.pdf"
 ></amp-google-document-embed>
 
 </amp-story-page-attachment>
@@ -3027,7 +3354,7 @@ Rule 3e erases the double negation to derive the conclusion.
 </amp-story-grid-layer>
 </amp-story-page>
 
-<!-- new sequence; introduce Antonio Damasio -->
+<!-- new sequence; introduce Damasio -->
 <amp-story-page id="sowa-52" data-item-label="Reasoning with Mental Models">
 
 <amp-story-grid-layer template="fill"><amp-img id="" data-item-role="background" data-item-type="static" data-item-label="background-mottled-white" src="https://s3.amazonaws.com/benetta.net/media/background-svg/background-fractal-noise-w1650-h1500.svg" width="1650" height="1500" layout="responsive"></amp-img></amp-story-grid-layer>
@@ -3088,15 +3415,31 @@ The logical features of EGs could be used to represent rules and constraints for
 </section>
 </amp-story-grid-layer>
 
-<amp-story-page-attachment layout="nodisplay" theme="dark" cta-image="https://s3.amazonaws.com/benetta.net/media/logo/ontomatica/ontomatica-symbol-w33-h36-color-202125-bgnd-white.svg" cta-text="Antonio Damasio" data-title="Antonio Damasio">
+<amp-story-page-attachment layout="nodisplay" cta-image="https://s3.amazonaws.com/benetta.net/media/logo/ontomatica/ontomatica-symbol-w33-h36-color-1F64FF-bgnd-white.svg" cta-text="Antonio Damasio" data-title="">
 
-<amp-img
-  src="https://afdsi.com/__test-sowa/image/antonio-damasio-w1579-h1579.jpg"
-  layout="responsive"
-  width="1579"
-  height="1579"
-></amp-img>
+<section>
+<ul>
+<li class="card">
+<a 
+  href="#" 
+  class="featured-image" 
+  style="background-image:url('./image/antonio-damasio-w1579-h1579.jpg')">
+</a>
+<article class="card-body">
+  <header>
+    <h3 class="NotoSans-Regular-400 lh-08">
+    <a href="https://en.wikipedia.org/wiki/Antonio_Damasio" class="NotoSans-Regular-400 uline c-1f64ff">Antonio Damasio</a>
+    </h3>
+    <p class="NotoSerif-Regular-400 fs-12">
+    Antonio Damasio is a Portuguese&#x2010;American neurologist and neuroscientist. His main research interest is the neurobiology of the mind, especially neural systems which serve memory, language, emotion, and decision&#x2010;making. His research documents the neural basis for emotions that play a central role in social cognition and decision&#x2010;making.
+    </p>
+  </header>
+</article>
+</li>
+</ul>
 
+<div class="sp-2"></div>
+</section>
 </amp-story-page-attachment>
 
 </amp-story-page>
@@ -3235,15 +3578,15 @@ To make that possible we need:
 </dt>
 
 <dd class="NotoSans-Regular-400 fs-12 lh-12"><span class="c-11 mr-s"></span>
-Open standards for digital sentence representation &#x2012; e.g., the RDF Language
+Open standards for digital sentence representation e.g., the RDF Language
 </dd>
 
 <dd class="NotoSans-Regular-400 fs-12 lh-12"><span class="c-12 mr-s"></span>
-Open standards for symbols that function like names &#x2012; e.g., HTTP hyperlinks
+Open standards for symbols that function like names e.g., HTTP hyperlinks
 </dd>
 
 <dd class="NotoSans-Regular-400 fs-12 lh-12"><span class="c-13 mr-s"></span>
-Open standards for representing relationship types &#x2012; e.g., OWL to describe entity&#x2010;relationship types in machine&#x2010;comprehensible form.
+Open standards for representing relationship types e.g., OWL to describe entity&#x2010;relationship types in machine&#x2010;comprehensible form.
 </dd>
 
 <dd class="NotoSans-Regular-400 fs-12 lh-12"><span class="c-14 mr-s"></span>
@@ -3251,11 +3594,7 @@ Database systems to manage data represented as sentence&#x2012;graphs, using the
 </dd>
 
 <dt>
-John F Sowa teaches how to build sentence&#x2012;graphs.
-</dt>
-
-<dt>
-The rest is a &#x201C;small matter of programming&#x201D; (SMOP)&#x2A;
+John F Sowa teaches how to build sentence&#x2012;graphs that are the foundation for logic programming.
 </dt>
 
 </dl>
@@ -3266,8 +3605,13 @@ The rest is a &#x201C;small matter of programming&#x201D; (SMOP)&#x2A;
 
 </amp-story-grid-layer>
 
-<amp-story-page-outlink layout="nodisplay" theme="dark" cta-accent-element="text" cta-image="https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Wikipedia_Logo_1.0.png/240px-Wikipedia_Logo_1.0.png"><a href="https://en.wikipedia.org/wiki/Small_matter_of_programming">&#x2A; SMOP</a></amp-story-page-outlink>
+<amp-story-page-attachment layout="nodisplay" theme="dark" cta-image="https://s3.amazonaws.com/benetta.net/media/logo/ontomatica/ontomatica-symbol-w33-h36-color-202125-bgnd-white.svg" cta-text="Logic Programming Detail" data-title="What is Data?">
 
+<section>
+
+
+</section>
+</amp-story-page-attachment>
 </amp-story-page>
 
 <amp-story-page id="sowa-53" data-item-label="Summary">
@@ -3349,14 +3693,13 @@ Johnson-Laird, Philip N. &#x28;2002&#x29; Peirce, logic diagrams, and the elemen
 	src="https://afdsi.com/__test-sowa/attach/johnson-laird_-_peirce-logic-diagrams-and-reasoning.pdf"
 ></amp-google-document-embed>
 
-<div class="sp-2"></div>
-
 </dl>
+<div class="sp-8"></div>
 </section>
 </amp-story-page-attachment>
 </amp-story-page>
 
-<!-- EXTRA -->
+<!-- integrate with Vocabulary -->
 <amp-story-page id="sowa-54" data-item-label="attachment-ontology">
 <amp-story-grid-layer template="fill"><amp-img id="background-mottled-white" data-item-role="background" data-item-type="static" data-item-label="background-mottled-white" src="https://s3.amazonaws.com/benetta.net/media/background-svg/background-fractal-noise-w1650-h1500.svg" width="1650" height="1500" layout="responsive" animate-in="fade-in" animate-in-duration="2s"></amp-img></amp-story-grid-layer>
 
@@ -3519,7 +3862,7 @@ In the context of knowledge sharing, I use the term ontology to mean a specifica
 <p>Similarly we can figure out all of the people who work for subsidiaries of a given parent without that fact being explicitly documented.</p><p>Here is a problem we can solve&#x003A;</p>
 
 <amp-img
-	src="./image/family-reunion-w382-h234.png"
+	src="./image/xkcd-family-reunion-w382-h234.png"
 	width="382"
 	height="234"
 	layout="responsive"
@@ -3539,43 +3882,99 @@ style="color:white;"
 <dt class="symbol">&#x2250;</dt>
 
 <dd><span class="c-583e2e mr-s"></span>approaches the limit; is nearly equal to</dd>
-<dd><span class="c-bf988f mr-s"></span><a class="uline" style="color:white;" href="https://en.wikipedia.org/wiki/Limit_(mathematics)" target="_blank">Limit (mathematics)</a></dd><hr><dt class="symbol">&#x2229;</dt>
+<dd><span class="c-bf988f mr-s"></span>
+<a class="uline" style="color:white;" href="https://en.wikipedia.org/wiki/Limit_(mathematics)" target="_blank">Limit (mathematics)</a>
+</dd>
+
+<hr>
+
+<dt class="symbol">&#x2229;</dt>
 <dd><span class="c-a7414a mr-s"></span>conjuction; intersection</dd>
-<dd><span class="c-6a8a82 mr-s"></span><a class="uline" href="https://en.wikipedia.org/wiki/Intersection" target="_blank">Intersection</a></dd><hr><dt class="symbol">&#x00AC;</dt>
+<dd><span class="c-6a8a82 mr-s"></span>
+<a class="uline" style="color:white;" href="https://en.wikipedia.org/wiki/Intersection" target="_blank">Intersection</a>
+</dd>
+
+<hr>
+
+<dt class="symbol">&#x00AC;</dt>
 <dd><span class="c-a37c27 mr-s"></span>negation</dd>
-<dd><span class="c-4fd993 mr-s"></span><a class="uline" href="https://en.wikipedia.org/wiki/Negation" target="_blank">Negation</a></dd>
+<dd><span class="c-4fd993 mr-s"></span>
+<a class="uline" style="color:white;" href="https://en.wikipedia.org/wiki/Negation" target="_blank">Negation</a>
+</dd>
 
 <hr>
 
 <dt class="symbol">&#x222A;</dt>
 
 <dd><span class="c-704404 mr-s"></span>disjunction</dd>
-<dd><span class="c-4e7ba7 mr-s"></span><a class="uline" href="https://en.wikipedia.org/wiki/Disjoint_union" target="_blank">Disjoint union</a></dd><hr><dt class="symbol">&#x2203;</dt>
+<dd><span class="c-4e7ba7 mr-s"></span>
+<a class="uline" style="color:white;" href="https://en.wikipedia.org/wiki/Disjoint_union" target="_blank">Disjoint union</a>
+</dd>
+
+<hr>
+
+<dt class="symbol">&#x2203;</dt>
 <dd><span class="c-d28f1b mr-s"></span>existential restriction; there exists</dd>
-<dd><span class="c-1ecfd6 mr-s"></span><a class="uline" href="https://en.wikipedia.org/wiki/Existential_quantification" target="_blank">Existential quantification</a></dd><hr><dt class="symbol">&#x22A4;</dt>
+<dd><span class="c-1ecfd6 mr-s"></span>
+<a class="uline" style="color:white;" href="https://en.wikipedia.org/wiki/Existential_quantification" target="_blank">Existential quantification</a>
+</dd>
+
+<hr>
+
+<dt class="symbol">&#x22A4;</dt>
 <dd><span class="c-edd179 mr-s"></span>universal concept; (&#x201C;top&#x201D;)</dd>
-<dd><span class="c-c05640 mr-s"></span><a class="uline" href="https://en.wikipedia.org/wiki/Top_type" target="_blank">Top type</a></dd>
+<dd><span class="c-c05640 mr-s"></span>
+<a class="uline" style="color:white;" href="https://en.wikipedia.org/wiki/Top_type" target="_blank">Top type</a>
+</dd>
 
 <hr>
 
 <dt class="symbol">&#x2291;</dt>
 
 <dd><span class="c-728ca3 mr-s"></span>subsumption; subset</dd>
-<dd><span class="c-73c0f4 mr-s"></span><a class="uline" href="https://en.wikipedia.org/wiki/Hierarchy#Subsumptive_containment_hierarchy" target="_blank">Hierarchy - Subsumptive containment</a></dd><hr><dt class="symbol">&#x22A5;</dt>
+<dd><span class="c-73c0f4 mr-s"></span>
+<a class="uline" style="color:white;" href="https://en.wikipedia.org/wiki/Hierarchy#Subsumptive_containment_hierarchy" target="_blank">Hierarchy - Subsumptive containment</a>
+</dd>
+
+<hr>
+
+<dt class="symbol">&#x22A5;</dt>
 <dd><span class="c-f3e46c mr-s"></span>null concept; (&#x201C;bottom&#x201D;)</dd>
-<dd><span class="c-582a20 mr-s"></span><a class="uline" href="https://en.wikipedia.org/wiki/Bottom_type" target="_blank">Bottom type</a></dd><hr><dt class="symbol">&#x2261;</dt>
+<dd><span class="c-582a20 mr-s"></span>
+<a class="uline" style="color:white;" href="https://en.wikipedia.org/wiki/Bottom_type" target="_blank">Bottom type</a>
+</dd>
+
+<hr>
+
+<dt class="symbol">&#x2261;</dt>
 <dd><span class="c-9499a6 mr-s"></span>equivalence</dd>
-<dd><span class="c-c59cdb mr-s"></span><a class="uline" href="https://en.wikipedia.org/wiki/Equivalence_relation" target="_blank">Equivalence relation</a></dd><hr><dt class="symbol">&#x2200;</dt>
+<dd><span class="c-c59cdb mr-s"></span>
+<a class="uline" style="color:white;" href="https://en.wikipedia.org/wiki/Equivalence_relation" target="_blank">Equivalence relation</a>
+</dd>
+
+<hr>
+
+<dt class="symbol">&#x2200;</dt>
 <dd><span class="c-a67b04 mr-s"></span>universal value restriction; for all; for any; for each</dd>
-<dd><span class="c-525b56 mr-s"></span><a class="uline" href="https://en.wikipedia.org/wiki/Universal_quantification" target="_blank">Universal quantification</a></dd><hr><dt class="symbol">&#x0028; &#x0029;</dt>
+<dd><span class="c-525b56 mr-s"></span>
+<a class="uline" style="color:white;" href="https://en.wikipedia.org/wiki/Universal_quantification" target="_blank">Universal quantification</a>
+</dd>
+
+<hr>
+
+<dt class="symbol">&#x0028; &#x0029;</dt>
 <dd><span class="c-93a806 mr-s"></span>precedence grouping</dd>
-<dd><span class="c-f08b33 mr-s"></span><a class="uline" href="null" target="_blank">Precedence grouping</a></dd>
+<dd><span class="c-f08b33 mr-s"></span>
+<a class="uline" style="color:white;" href="null" target="_blank">Precedence grouping</a>
+</dd>
 
 <hr>
 
 <dt class="symbol">&#x2283;</dt>
 <dd><span class="c-d75404 mr-s"></span>implies; if &#x2026; then</dd>
-<dd><span class="c-8a2c02 mr-s"></span><a class="uline" href="https://en.wikipedia.org/wiki/Material_conditional" target="_blank">Material conditional</a></dd>
+<dd><span class="c-8a2c02 mr-s"></span>
+<a class="uline" style="color:white;" href="https://en.wikipedia.org/wiki/Material_conditional" target="_blank">Material conditional</a>
+</dd>
 
 <hr>
 </dl>
@@ -3584,7 +3983,10 @@ style="color:white;"
 </amp-story-page-attachment>
 </amp-story-page>
 
+</amp-story>
 
+</body>
+</html>
 
 <!-- deprecated
 
@@ -4099,7 +4501,3 @@ http://www.jfsowa.com/pubs/eg2cg.pdf
 </amp-story-page>
 -->
 
-</amp-story>
-
-</body>
-</html>
